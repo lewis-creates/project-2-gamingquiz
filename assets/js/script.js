@@ -46,5 +46,23 @@ function evaluateAnswer(selectedIndex) {
     nextButton.style.display = 'block';
 }
 
+function nextQuestion() {
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+        loadQuestion();
+    } else {
+        endQuiz();
+    }
+}
+
+function endQuiz() {
+    questionElement.textContent = 'Quiz ended!';
+    optionsElement.innerHTML = '';
+    resultElement.textContent = 'Youre score: ${score}/${questions.length}';
+    nextButton.style.display = 'none';
+}
+
 
 loadQuestion();
+
+nextButton.addEventListener('click', nextQuestion);
