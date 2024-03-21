@@ -2,20 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PC Gaming Trivia Quiz.">
     <title>PC Gaming Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div id="quiz-container">
-        <h1>PC Gaming Quiz</h1>
-        <div id="question"></div>
-        <div id="options"></div>
-        <button id="next-btn">Next</button>
-        <p id="result"></p>
-        <div id="timer">Timer: <span id="time"></span></div>
-    </div>
+    <header class="header-main">
+        <div class="heading">
+            <h1>PC Gaming Quiz</h1>
+            <h2>Test your knowledge</h2>
+        </div>
+    </header>
 
+    <!-- Start the quiz button -->
+    <main>
+        <button class="start-btn">Start</button>
+    </main>
+
+    <!-- Rules of the Quiz -->
+    <figure>
+        <div class="instructions-area">
+            <div class="instructions-heading">Quiz Instructions</div>
+    
+            <div class="instructions-list">
+                <div class="inst">1. This quiz contains <span>20</span> questions related to PC gaming.</div>
+                <div class="inst">2. You will have <span>15 seconds</span> to answer each question.</div>
+                <div class="inst">3. Once you select an answer, you will be unable to change your selection.</div>
+                <div class="inst">4. You will gain <span>1 point</span> for every correct answer.</div>
+                <div class="inst">5. Once completed, you will be given your <span>percentage</span> and <span>grade</span>.</div>
+                <div class="inst">6. If playing on a mobile device, please have your device <span>portrait</span>.</div>
+            </div>
+    
+            <div class="buttons">
+                <button class="exit-btn" aria-label="Exit the test button">Exit</button>
+                <button class="begin-btn" aria-label="Begin the test button">Start Quiz</button>
+            </div>
+        </div>
+    </figure>
+
+    <!-- Quiz Category -->
+    <figure>
+        <div class="category-area">
+            <div class="category-heading">Select Category</div>
+            <div class="buttons" id="cat-buttons">
+                <button class="genre-btn" aria-label="PC Gaming Genre button">Genre</button>
+                <button class="game-btn" aria-label="PC Games button">Games</button>
+                <button class="hardware-btn" aria-label="PC Gaming Hardware button">Hardware</button>
+                <button class="history-btn" aria-label="PC Gaming History button">History</button>
+            </div>
+        </div>
+    </figure>
+
+
+    <!-- Quiz Difficulty -->
+    <figure>
+        <div class="difficulty-area">
+            <div class="difficulty-heading">Select Difficulty</div>
+            <div class="buttons" id="diff-buttons">
+                <button class="easy-btn" aria-label="Easy difficulty button">Easy</button>
+                <button class="medium-btn" aria-label="Medium difficulty button">Medium</button>
+                <button class="hard-btn" aria-label="Hard difficulty button">Hard</button>
+            </div>
+        </div>
+    </figure>
+
+
+  <!-- Quiz game area -->
+  <figure>
+    <div class="game_area">
+      <header>
+        <div class="total_questions"></div>
+        <div class="title" id="quiz_cat_heading"></div>
+        <div class="time_line">
+          <div class="progress">
+            <div class="progress_bar"></div>
+            <span class="progress_text">15</span>
+          </div>
+        </div>
+      </header>
+      <div class="play_area">
+        <div class="question_text" id="question"></div>
+        <div class="option_list" id="opt_list"></div>
+      </div>
+
+      <!--Quiz Box Footer-->
+      <footer>
+        <button class="next_btn" aria-label="next question button">Next Question</button>
+      </footer>
+    </div>
+  </figure>
+
+
+  <!-- Results window -->
+  <figure>
+    <div class="result-area">
+        <div class="complete-text">Quiz Complete</div>
+        <div class="score-value"></div>
+        <div class="percentage"></div>
+        <div class="grade"></div>
+        <div class="buttons">
+            <button class="quit" aria-label="restart the test button">Restart</button>
+        </div>
+    </div>
+  </figure>
+
+
+  <!-- Footer area -->
+  <div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a
+            href="http://www.twitch.tv"
+            target="_blank"
+            aria-label="Navigate to Twitch"
+            ><i class="icon ion-social-twitch"></i></a
+            ><a
+            href="http://www.steamcommunity.com"
+            target="_blank"
+            aria-label="Navigate to Steam Community"
+            ><i class="icon ion-steam"></i></a
+            ><a
+            href="http://www.discord.com"
+            target="_blank"
+            aria-label="Navigate to Discord"
+            ><i class="icon ion-logo-discord"></i></a
+            ><a
+            href="http://www.reddit.com/r/pcgaming"
+            target="_blank"
+            aria-label="Navigate to PC Gaming subreddit"
+            ><i class="icon ion-social-reddit"></i></a>
+        </div>
+        <p class="copyright">Copyright Lewis Cummings 2024</p>
+    </footer>
+  </div> 
     <script src="assets/js/script.js"></script>
 </body>
 </html>
