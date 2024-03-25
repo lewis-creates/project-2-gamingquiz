@@ -95,3 +95,10 @@ hardwareBtn.addEventListener("click", () => {
 historyBtn.addEventListener("click", () => {
     selectCategory('History');
 });
+
+function selectCategory(selectedCategory) {
+    categoryArea.classList.remove("activeCategory");
+    difficultyArea.classList.add("activeDifficulty");
+    category = '15';
+    heading.innerText = selectCategory;
+}
