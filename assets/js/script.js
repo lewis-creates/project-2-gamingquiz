@@ -28,3 +28,29 @@ startBtn.addEventListener("click", () => {
     headerMain.classList.add("activeHeader");
     footerBasic.classList.add("activeFooter");
 });
+
+// Difficulty Select Buttons Easy / Medium / Hard
+easyBtn.addEventListener("click", () => {
+    selectDifficulty('easy');
+});
+
+mediumBtn.addEventListener("click", () => {
+    selectDifficulty('medium');
+});
+
+hardBtn.addEventListener("click", () => {
+    selectDifficulty('hard');
+});
+
+function selectDifficulty(selectedDifficulty) {
+    difficultyArea.classList.remove("activeDifficulty");
+    instructionsArea.classList.remove("activeInfo");
+    gameArea.classList.add("activeGame");
+    questionCounter(1);
+    startTimer(15);
+    startTimerLine(0);
+    difficulty = selectedDifficulty;
+    loadQuestion().then(() => {
+        showQuestion();
+    });
+}
