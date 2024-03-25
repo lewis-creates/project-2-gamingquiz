@@ -176,6 +176,16 @@ h2 {
     background: #005a9e;
 }
 
+.game-area {
+    min-width: 60%;
+    background: #303030;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+    box-shadow: 10px 10px 15px black;
+}
+
 .game-area header {
     display: flex;
     align-items: center;
