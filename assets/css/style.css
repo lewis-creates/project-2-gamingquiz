@@ -116,3 +116,17 @@ h2 {
     pointer-events: none;
     transform: translate(-50%, -50%);
 }
+
+.instructions-area .instructions-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    padding: 20px 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+}
