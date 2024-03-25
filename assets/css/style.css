@@ -171,3 +171,7 @@ h2 {
 .buttons  .quit {
     margin-top: auto;
 }
+
+.buttons button:hover {
+    background: #005a9e;
+}
