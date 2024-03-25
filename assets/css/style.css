@@ -167,3 +167,7 @@ h2 {
     transition: all 0.3s ease;
     background: #0078d4;
 }
+
+.buttons  .quit {
+    margin-top: auto;
+}
