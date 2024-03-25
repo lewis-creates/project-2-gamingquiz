@@ -51,3 +51,7 @@ h2 {
     background: #0078d4;
     color: #ffffff
 }
+
+.start-btn:hover {
+    background: #005a9e;
+}
