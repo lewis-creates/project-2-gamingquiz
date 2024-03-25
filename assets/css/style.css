@@ -208,3 +208,10 @@ h2 {
     margin-top: 20px;
     color: #ffffff;
 }
+
+.game-area header .total-questions span {
+    display: flex;
+    user-select: none;
+    font-size: 20px;
+    font-weight: 600;
+}
