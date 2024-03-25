@@ -54,3 +54,27 @@ function selectDifficulty(selectedDifficulty) {
         showQuestion();
     });
 }
+
+// Quiz next button
+nextBtn.addEventListener("click", () => {
+    if (questionNumber < questionsList.length) {
+        currentIndex += 1;
+        questionNumber += 1;
+        questionCounter(questionNumber);
+        clearInterval(counter);
+        startTimer(timeValue);
+        clearInterval(progressLine);
+        startTimerLine(widthValue);
+        nextBtn.computedStyleMap.display = "none";
+        showQuestion();
+    } else {
+        console.log("Questions complete!");
+        showResultArea();
+    }
+});
+
+// Move to category select on click 
+beginBtn.addEventListener("click", () => {
+    instructionsArea.classList.remove("activeInfo");
+    categoryArea.classList.add("activeCategory");
+});
