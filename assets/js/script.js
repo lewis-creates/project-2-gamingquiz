@@ -102,3 +102,8 @@ function selectCategory(selectedCategory) {
     category = '15';
     heading.innerText = selectCategory;
 }
+
+// Reloads the window on restart test button click
+quitBtn.addEventListener("click", () => {
+    window.location.reload();
+});
