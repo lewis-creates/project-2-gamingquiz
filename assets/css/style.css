@@ -19,6 +19,24 @@ h2 {
     text-align: center;
 }
 
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #b1d1f0;
+    padding: 30px;
+}
+
+.heading h1 {
+    font-size: 50px;
+}
+
+.heading h2 {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
 /* Styling for various components*/
 .start-btn,
 .instructions-area,
@@ -61,6 +79,16 @@ h2 {
 .start-btn:hover {
     background: #005a9e;
 }
+
+@media only screen and (min-width: 1040px) {
+    .start_btn:hover {
+        background: #b1d1f0;
+        color: rgb(3, 46, 103);
+        transition: all 0.3s ease;
+        box-shadow: 8px 8px 8px black;
+    }
+}
+
 
 /* Styling for category area */
 .category-area {
@@ -191,6 +219,14 @@ h2 {
 .buttons button:hover {
     background: #005a9e;
 }
+
+@media only screen and (min-width: 1040px) {
+    .buttons button:hover {
+        background: #b1d1f0;
+        transition: all .5s ease;
+        box-shadow: 8px 8px 8px black;
+        color: rgb(3, 46, 103);
+    }
 
 /* Styling for game area */
 .game-area {
