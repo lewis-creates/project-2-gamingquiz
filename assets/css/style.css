@@ -80,3 +80,14 @@ h2 {
     font-weight: 600;
     color: #ffffff;
 }
+
+.difficulty-area {
+    padding: 20px;
+    width: 60%;
+    border-radius: 5px;
+    opacity: 0;
+    border: 1px solid #ffffff;
+    background: #303030;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
