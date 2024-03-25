@@ -215,3 +215,7 @@ h2 {
     font-size: 20px;
     font-weight: 600;
 }
+
+header .total-questions span p:first-child {
+    padding-left: 0px;
+}
