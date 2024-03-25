@@ -55,3 +55,14 @@ h2 {
 .start-btn:hover {
     background: #005a9e;
 }
+
+.category-area {
+    padding: 20px;
+    width: 60%;
+    border-radius: 5px;
+    opacity: 0;
+    border: 1px solid #ffffff;
+    background: #303030;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
