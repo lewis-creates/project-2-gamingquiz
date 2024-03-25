@@ -1,3 +1,4 @@
+/* Default styling to all elements */
 * {
     margin: 0;
     padding: 0;
@@ -6,16 +7,19 @@
     height: auto;
 }
 
+/* Body styling */
 body {
     background: #303030;
 }
 
+/* Heading styling */
 h1,
 h2 {
     color:#ffffff;
     text-align: center;
 }
 
+/* Styling for various components*/
 .start-btn,
 .instructions-area,
 .difficulty-area,
@@ -29,6 +33,7 @@ h2 {
     transition: all 0.5 ease;
 }
 
+/* Styling for active state of components */
 .instructions-area.active-info,
 .difficulty-area.active-difficulty,
 .category-area.active-category,
@@ -40,6 +45,7 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
+/* Styling for start button */
 .start-btn {
     font-size: 30px;
     font-weight: 600;
@@ -56,6 +62,7 @@ h2 {
     background: #005a9e;
 }
 
+/* Styling for category area */
 .category-area {
     padding: 20px;
     width: 60%;
@@ -67,6 +74,7 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
+/* Styling for category heading */
 .category-area .category-heading {
     display: flex;
     align-items: center;
@@ -81,6 +89,7 @@ h2 {
     color: #ffffff;
 }
 
+/* Styling for difficutly area */
 .difficulty-area {
     padding: 20px;
     width: 60%;
@@ -92,6 +101,7 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
+/* Styling for difficulty heading */
 .difficulty-area .difficulty-heading {
     display: flex;
     align-items: center;
@@ -106,6 +116,7 @@ h2 {
     color: #ffffff;
 }
 
+/* Styling for instructions area */
 .instructions-area {
     padding: 20px;
     width: 60px;
@@ -117,6 +128,7 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
+/* Styling for instructions heading */
 .instructions-area .instructions-heading {
     display: flex;
     align-items: center;
@@ -131,6 +143,7 @@ h2 {
     color: #ffffff;
 }
 
+/* Styling for instructions list items */
 .instructions-area .instructions-list .inst {
     height: 60px;
     width: 100%;
@@ -139,12 +152,14 @@ h2 {
     color: #ffffff;
 }
 
+/* Styling for span elements within instructions area */
 .instructions-area span {
     padding: 0 5px;
     font-weight: 600;
     color: #00ff00;
 }
 
+/* Styling for buttons container */
 .buttons {
     height: 120px;
     display: flex;
@@ -153,6 +168,7 @@ h2 {
     padding: 0 35px;
 }
 
+/* Styling for buttons */
 .buttons button {
     margin: 30px 30px;
     padding: 5px;
@@ -176,6 +192,7 @@ h2 {
     background: #005a9e;
 }
 
+/* Styling for game area */
 .game-area {
     min-width: 60%;
     background: #303030;
@@ -186,6 +203,7 @@ h2 {
     box-shadow: 10px 10px 15px black;
 }
 
+/* Styling for header within game area */
 .game-area header {
     display: flex;
     align-items: center;
@@ -201,6 +219,7 @@ h2 {
     box-shadow: 0px 5px 2px grey;
 }
 
+/* Styling for title within game area header */
 .game-area header .title {
     font-size: 20px;
     font-weight: 600;
@@ -209,6 +228,7 @@ h2 {
     color: #ffffff;
 }
 
+/* Styling for total questions within game area header */
 .game-area header .total-questions span {
     display: flex;
     user-select: none;
@@ -216,15 +236,18 @@ h2 {
     font-weight: 600;
 }
 
+/* Styling for paragraphs within total questions span */
 header .total-questions span p {
     font-weight: 500;
     padding: 0px 5px;
 }
 
+/* Styling for first child paragraph within total questions span */
 header .total-questions span p:first-child {
     padding-left: 0px;
 }
 
+/* Styling for time line */
 .time-line {
     width: 100%;
     height: 100px;
