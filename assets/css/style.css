@@ -15,3 +15,16 @@ h2 {
     color:#ffffff;
     text-align: center;
 }
+
+.start-btn,
+.instructions-area,
+.difficulty-area,
+.category-area,
+.game-area,
+.result-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5 ease;
+}
