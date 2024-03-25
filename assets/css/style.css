@@ -138,3 +138,9 @@ h2 {
     font-size: 20px;
     color: #ffffff;
 }
+
+.instructions-area span {
+    padding: 0 5px;
+    font-weight: 600;
+    color: #00ff00;
+}
