@@ -5,3 +5,13 @@
     box-sizing: border-box;
     height: auto;
 }
+
+body {
+    background: #303030;
+}
+
+h1,
+h2 {
+    color:#ffffff;
+    text-align: center;
+}
