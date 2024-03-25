@@ -78,3 +78,20 @@ beginBtn.addEventListener("click", () => {
     instructionsArea.classList.remove("activeInfo");
     categoryArea.classList.add("activeCategory");
 });
+
+// Category buttons 
+genreBtn.addEventListener("click", () => {
+    selectCategory('Genre');
+});
+
+gameBtn.addEventListener("click", () => {
+    selectCategory('Games');
+});
+
+hardwareBtn.addEventListener("click", () => {
+    selectCategory('Hardware');
+});
+
+historyBtn.addEventListener("click", () => {
+    selectCategory('History');
+});
