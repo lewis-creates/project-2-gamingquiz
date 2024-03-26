@@ -227,6 +227,7 @@ h2 {
         box-shadow: 8px 8px 8px black;
         color: rgb(3, 46, 103);
     }
+}
 
 /* Styling for game area */
 .game-area {
@@ -289,4 +290,15 @@ header .total-questions span p:first-child {
     height: 100px;
     display: flex;
     align-items: center;
+}
+
+.time-line .progress {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 3px solid black;
 }
