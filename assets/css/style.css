@@ -408,3 +408,28 @@ header .total-questions span p:first-child {
     align-items: center;
     justify-content: center;
 }
+
+/* Footer game area next button */ 
+footer .next_btn {
+    display: none;
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    background: #032E67;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+@media only screen and (min-width: 1040px) {
+    footer .next_btn:hover {
+        background: #b1d1f0;
+        box-shadow: 8px 8px 8px black;
+        color: #032E67;
+    }
+}
