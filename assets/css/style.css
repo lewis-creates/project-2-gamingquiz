@@ -574,3 +574,20 @@ footer .next_btn {
 .copyright {
     font-family: Lato, sans-serif;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .heading h2 {
+        font-size: 25px;
+    }
+
+    /* Hide header and footer */
+    .header_maon.activeHeader {
+        display: none;
+    }
+}
