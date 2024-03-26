@@ -669,5 +669,74 @@ footer .next_btn {
         font-size: 15px;
     }
 
+    .buttons .genre-btn,
+    button.game-btn,
+    button.hardware-btn,
+    button.history-btn {
+        height: 70px;
+        width: 160px;
+    }
+
+    h1 {
+        margin-top: 0px;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .heading {
+        padding: 5px;
+    }
+
+    .game-area {
+        width: 95%;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    .game-area .play_area {
+        padding: 0px;
+    }
+
+    .game-area .play_area .question_text {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+
+    .game-area .play-area .option_list {
+        padding: 0px 0px 15px 0px;
+        display: block;
+        min-width: 85%;
+    }
+
+    .game-area .option_list .option {
+        padding: 5px 15px;
+        margin-bottom: 5px;
+        max-height: 100vh;
+        margin-right: 0px;
+        justify-content: center;
+        margin-top: 30px;
+        min-height: 0px;
+        min-width: 0px;
+    }
+
+    .game-area .option_list .option:last-child {
+        margin-bottom: 10px;
+    }
+
+    .game-area .option_list .option:first-child {
+        margin-top: 10px;
+    }
+
+    .result-area {
+        width: auto;
+    }
+
+    .quit {
+        margin-top: 20px;
+    }
+}
+
 
 }
