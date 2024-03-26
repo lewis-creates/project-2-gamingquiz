@@ -381,3 +381,20 @@ header .total-questions span p:first-child {
         transform: scale(0.95);
     }
 }
+
+/* selecting correct answer and incorrect answer */
+.option_list .option.correct {
+    color: #175e1a;
+    background: #64ad75;
+    border-color: #03290c;
+}
+
+.option_list .option.incorrect {
+    color: #721c24;
+    background: #ed3545;
+    border-color: #f5c6cb;
+}
+
+.option_list .option.disabled {
+    pointer-events: none;
+}
