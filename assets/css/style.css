@@ -647,5 +647,27 @@ footer .next_btn {
         padding: 0px 20px;
     }
 
+     /* Instructions area*/
+     .instructions-area {
+        width: 90%;
+        padding: 0px 20px;
+    }
+
+    .begin-btn {
+        width: 100px;
+    }
+
+    .instructions-area .instructions-heading .difficulty-heading .category-heading {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .instructions-area .instructions-list .inst {
+        margin-bottom: 30px;
+        margin-top: 20px;
+        height: auto;
+        font-size: 15px;
+    }
+
 
 }
