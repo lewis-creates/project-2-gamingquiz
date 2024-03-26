@@ -371,3 +371,13 @@ header .total-questions span p:first-child {
     margin-bottom: 30px;
     margin-right: 0px;
 }
+
+/* option list in game area hover color */
+@media only screen and (min-width: 1040px) {
+    .game_area .option_list li:hover {
+        background: #032E67;
+        color: #fff;
+        transition: all is ease;
+        transform: scale(0.95);
+    }
+}
