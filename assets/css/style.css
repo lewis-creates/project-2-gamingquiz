@@ -81,7 +81,7 @@ h2 {
 }
 
 @media only screen and (min-width: 1040px) {
-    .start_btn:hover {
+    .start-btn:hover {
         background: #b1d1f0;
         color: rgb(3, 46, 103);
         transition: all 0.3s ease;
@@ -433,3 +433,65 @@ footer .next_btn {
         color: #032E67;
     }
 }
+
+/* Results window styling */ 
+.result-area {
+    background: #E4E8FA;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+    box-shadow: 2px 2px 2px black;
+}
+
+.result-area .complete-text {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.result-area .percentage {
+    font-size: 25px;
+    font-weight: 500;
+    background: linear-gradient(to left, #b1d1f0, #487EC5);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.result-area .grade {
+    font-size: 30px;
+    font-weight: 500;
+    background: linear-gradient(to left, #b1d1f0, #487ec5);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.result-area .score-value span {
+    display: flex;
+    margin: 10px 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.score-value span p {
+    font-weight: 500;
+    padding: 0 4px;
+}
+
+.percentage .grade span p {
+    font-weight: 500;
+    padding: 0 4px;
+}
+
