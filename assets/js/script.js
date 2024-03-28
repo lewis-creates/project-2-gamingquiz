@@ -72,3 +72,7 @@ hardBtn.addEventListener("click", function() {
     startQuiz();
 });
 
+function startQuiz() {
+    console.log("Quiz started with difficulty: " + selectedDifficulty);
+}
+
