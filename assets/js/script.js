@@ -73,6 +73,18 @@ hardBtn.addEventListener("click", function() {
 });
 
 function startQuiz() {
-    console.log("Quiz started with difficulty: " + selectedDifficulty);
+    console.log("Quiz started with difficulty: " + selectedDifficulty)
 }
 
+async function loadQuestion() {
+    const APIUrl = 'https://opentdb.com/api.php?amount=20&category=${category}&difficulty=${difficulty}&type=multiple`;
+    try {
+        const response = await fetch(APIUrl);
+        const data = await response.json();
+        questionsList = data.results;
+        currentIndex = 0;
+        showQuestion();
+    } catch (error) {
+        console.error("Error loading questions:", error);
+    }
+}
