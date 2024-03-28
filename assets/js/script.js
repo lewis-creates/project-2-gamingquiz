@@ -100,3 +100,23 @@ function showQuestion() {
 
     attachOptionListeners(); // Set up listeners for each option 
 }
+
+function optionSelected(event) {
+    const selectedOption = evcent.target.textContent;
+    const correctAnswer = questionsList[currentIndex].correct_answer;
+
+    if(selectedOption === correctAnswer) {
+        userScore += 1;
+        event.target.classList.add("correct");
+    } else {
+        event.target.classList.add("incorrect")
+    }
+
+    document.querySelectorAll(".option").forEach(opt => opt.classList.add("disabled"));
+
+    if(currentIndex < questionsList.length - 1) {
+        next_btn.style.display = "block";
+    } else {
+        showResultsArea();
+    }
+}
