@@ -1,3 +1,4 @@
+// Selecting elements from the DOM
 const startBtn = document.querySelector(".start-btn");
 const instructionsArea = document.querySelector(".instructions-area");
 const beginBtn = document.querySelector(".begin-btn");
@@ -11,24 +12,29 @@ const easyBtn = document.querySelector(".easy-btn");
 const mediumBtn = document.querySelector(".medium-btn");
 const hardBtn = document.querySelector(".hard-btn");
 
+// Placeholder variables for selected category and difficulty
 let selectedCategory = '';
 let selectedDifficulty = '';
 
+// Event listener for the Start button
 startBtn.addEventListener("click", function() {
     instructionsArea.classList.add("active-info");
 });
 
+// Event listener for the Begin button
 beginBtn.Btn.addEventListener("click", function() {
     instructionsArea.classList.remove("active-info");
     categoryArea.classList.add("active-category");
 });
 
+// Category selection logic
 gameBtn.addEventListener("click", function() {
     selectedCategory = 'game';
     categoryArea.classList.remove("active-category");
     difficultyArea.classList.add("active-difficulty");
 });
 
+// Difficulty selection logic 
 genreBtn.addEventListener("click", function() {
     selectedCategory = 'genre';
     categoryArea.classList.remove("active-category");
