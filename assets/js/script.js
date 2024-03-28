@@ -77,7 +77,7 @@ function startQuiz() {
 }
 
 async function loadQuestion() {
-    const APIUrl = 'https://opentdb.com/api.php?amount=20&category=${category}&difficulty=${difficulty}&type=multiple`;
+    const APIUrl = 'https://opentdb.com/api.php?amount=20&category=${category}&difficulty=${difficulty}&type=multiple';
     try {
         const response = await fetch(APIUrl);
         const data = await response.json();
@@ -87,4 +87,16 @@ async function loadQuestion() {
     } catch (error) {
         console.error("Error loading questions:", error);
     }
+}
+
+function showQuestion() {
+    const question = questionsList[currentIndex];
+    questionElement.innerHTML = question.question;
+    options.innerHTML = question.incorrect_answers
+        .concat(question.correct_answer)
+        .sort(() => 0.5 - Math.random())
+        .map(option => '<li class="option">${option}</li>')
+        .join('');
+
+    attachOptionListeners(); // Set up listeners for each option 
 }
