@@ -77,7 +77,7 @@ function startQuiz() {
 }
 
 async function loadQuestion() {
-    const APIUrl = 'https://opentdb.com/api.php?amount=20&category=${category}&difficulty=${difficulty}&type=multiple';
+    const APIUrl = `https://opentdb.com/api.php?amount=20&category=${category}&difficulty=${difficulty}&type=multiple`;
     try {
         const response = await fetch(APIUrl);
         const data = await response.json();
