@@ -7,8 +7,12 @@ const gameBtn = document.querySelector(".game-btn");
 const genreBtn = document.querySelector(".genre-btn");
 const hardwareBtn = document.querySelector(".hardware-btn");
 const historyBtn = document.querySelector(".history-btn");
+const easyBtn = document.querySelector(".easy-btn");
+const mediumBtn = document.querySelector(".medium-btn");
+const hardBtn = document.querySelector(".hard-btn");
 
 let selectedCategory = '';
+let selectedDifficulty = '';
 
 startBtn.addEventListener("click", function() {
     instructionsArea.classList.add("active-info");
@@ -42,3 +46,23 @@ historyBtn.addEventListener("click", function() {
     categoryArea.classList.remove("active-category");
     difficultyArea.classList.add("active-difficulty");
 });
+
+
+easyBtn.addEventListener("click", function() {
+    selectedDifficulty = 'easy';
+    difficultyArea.classList.remove("active-difficulty");
+    startQuiz();
+});
+
+mediumBtn.addEventListener("click", function() {
+    selectedDifficulty = 'medium';
+    difficultyArea.classList.remove("active-difficulty");
+    startQuiz();
+});
+
+hardBtn.addEventListener("click", function() {
+    selectedDifficulty = 'hard';
+    difficultyArea.classList.remove("active-difficulty");
+    startQuiz();
+});
+
