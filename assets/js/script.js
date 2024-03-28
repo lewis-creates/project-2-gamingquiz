@@ -22,7 +22,7 @@ startBtn.addEventListener("click", function() {
 });
 
 // Event listener for the Begin button
-beginBtn.Btn.addEventListener("click", function() {
+beginBtn.addEventListener("click", function() {
     instructionsArea.classList.remove("active-info");
     categoryArea.classList.add("active-category");
 });
