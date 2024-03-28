@@ -56,7 +56,7 @@ h2 {
 .instructions-area.active-info,
 .difficulty-area.active-difficulty,
 .category-area.active-category,
-.game_area.active-game,
+.game-area.active-game,
 .result-area.active-result {
     z-index: 5;
     opacity: 1;
@@ -286,14 +286,14 @@ header .total-questions span p:first-child {
 }
 
 /* Styling for time line */
-.time_line {
+.time-line {
     width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
 }
 
-.time_line .progress {
+.time-line .progress {
     position: relative;
     width: 100%;
     height: 40px;
@@ -304,7 +304,7 @@ header .total-questions span p:first-child {
     border: 3px solid black;
 }
 
-.time_line .progress .progress_bar {
+.time-line .progress .progress-bar {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -313,7 +313,7 @@ header .total-questions span p:first-child {
     transition: width 0.25s ease;
 }
 
-.time_line .progress .progress_text {
+.time-line .progress .progress-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -324,7 +324,7 @@ header .total-questions span p:first-child {
 }
 
 /* Test section styling */
-.game_area .play_area {
+.game-area .play-area {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,14 +333,14 @@ header .total-questions span p:first-child {
     background: #E4E8FA;
 }
 
-.game_area .play_area .question_text {
+.game-area .play-area .question-text {
     font-size: 25px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.game_area .play_area .option_list {
+.game-area .play-area .option-list {
     padding: 20px 0;
     display: flex;
     align-items: center;
@@ -348,7 +348,7 @@ header .total-questions span p:first-child {
     padding: 10px;
 }
 
-.game_area .option_list li {
+.game-area .option-list li {
     background: #b1d1f0;
     border: 1px solid #032E67;
     border-radius: 5px;
@@ -368,14 +368,14 @@ header .total-questions span p:first-child {
     list-style-type: none;
 }
 
-.game_area .option_list .option:last-child {
+.game-area .option-list .option:last-child {
     margin-bottom: 30px;
     margin-right: 0px;
 }
 
 /* option list in game area hover color */
 @media only screen and (min-width: 1040px) {
-    .game_area .option_list li:hover {
+    .game-area .option-list li:hover {
         background: #032E67;
         color: #fff;
         transition: all is ease;
@@ -384,19 +384,19 @@ header .total-questions span p:first-child {
 }
 
 /* selecting correct answer and incorrect answer */
-.option_list .option.correct {
+.option-list .option.correct {
     color: #175e1a;
     background: #64ad75;
     border-color: #03290c;
 }
 
-.option_list .option.incorrect {
+.option-list .option.incorrect {
     color: #721c24;
     background: #ed3545;
     border-color: #f5c6cb;
 }
 
-.option_list .option.disabled {
+.option-list .option.disabled {
     pointer-events: none;
 }
 
@@ -411,7 +411,7 @@ header .total-questions span p:first-child {
 }
 
 /* Footer game area next button */ 
-footer .next_btn {
+footer .next-btn {
     display: none;
     height: 40px;
     padding: 0 13px;
@@ -428,7 +428,7 @@ footer .next_btn {
 }
 
 @media only screen and (min-width: 1040px) {
-    footer .next_btn:hover {
+    footer .next-btn:hover {
         background: #b1d1f0;
         box-shadow: 8px 8px 8px black;
         color: #032E67;
@@ -588,15 +588,15 @@ footer .next_btn {
     }
 
     /* Hide header and footer */
-    .header_maon.activeHeader {
+    .header-main.activeHeader {
         display: none;
     }
 
-    .footer_basic.activeFooter {
+    .footer-basic.activeFooter {
         display: none;
     }
 
-    .footer_basic {
+    .footer-basic {
         bottom: 10%;
     }
 
@@ -625,7 +625,7 @@ footer .next_btn {
     }
 
     /* Difficulty area */
-    #diff_buttons {
+    #diff-buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -741,7 +741,7 @@ footer .next_btn {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1300px) {
-    .instructions_area {
+    .instructions-area {
         display: flex;
         flex-direction: column;
         align-items: center;
