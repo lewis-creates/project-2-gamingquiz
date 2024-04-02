@@ -1,4 +1,3 @@
-import { customQuestions } from '.assets/js/questions.js';
 
 // Selecting elements from the DOM
 const nextBtn = document.querySelector(".next-btn");
@@ -8,12 +7,12 @@ const beginBtn = document.querySelector(".begin-btn");
 const gameArea = document.querySelector(".game-area");
 const optionList = document.querySelector(".option-list");
 const options = document.querySelector('.option-list');
-const exitBtn = document.querySelector(".exit_btn");
-const timerNum = document.querySelector(".progress_text");
-const timeLine = document.querySelector(".progress_bar");
-const resultArea = document.querySelector(".result_area");
-const headerMain = document.querySelector(".header_main");
-const footerBasic = document.querySelector(".footer_basic");
+const exitBtn = document.querySelector(".exit-btn");
+const timerNum = document.querySelector(".progress-text");
+const timeLine = document.querySelector(".progress-bar");
+const resultArea = document.querySelector(".result-area");
+const headerMain = document.querySelector(".header-main");
+const footerBasic = document.querySelector(".footer-basic");
 const quit = document.querySelector(".quit");
 const categoryArea = document.querySelector(".category-area");
 const difficultyArea = document.querySelector(".difficulty-area");
@@ -144,17 +143,6 @@ exitBtn.addEventListener("click", () => {
     instructionsArea.classList.remove("activeInfo");
 });
 
-
-function startQuiz() {
-    if (selectedCategory === 'games') {
-        loadQuestion('15');
-    } else {
-        questionsList = customQuestions[selectedCategory] || [];
-        currentIndex = 0;
-        showQuestion();
-    }
-}
-
 async function loadQuestion(categoryId) {
     const APIUrl = `https://opentdb.com/api.php?amount=20&category=15&type=multiple`;
     console.log("Fetching questions from:", APIUrl);
@@ -169,17 +157,45 @@ async function loadQuestion(categoryId) {
     }
 }
 
+// Display Question and options
 function showQuestion() {
-    const question = questionsList[currentIndex];
-    questionElement.innerHTML = question.question;
-    options.innerHTML = question.incorrect_answers
-        .concat(question.correct_answer)
-        .sort(() => 0.5 - Math.random())
-        .map(option => `<li class="option">${option}</li>`)
-        .join('');
+    let question = questionsList[currentIndex];
+    let correctAnswer = question.correct-answer;
+    let incorrectAnswer = question.incorrect-answers;
 
-    attachOptionListeners(); // Set up listeners for each option 
+    // Shuffle the incorrect answers array
+    incorrectAnswer.sort(() => Math.random() - 0.5);
+    let optionsList = incorrectAnswer.slice(0, 3);
+    optionsList.push(correctAnswer);
+    optionsList.sort(() => Math.random() - 0.5);
+    questionElement.innerHTML = `${question.question}`;
+    options.innerHTML = `${optionsList.map((option) => `<li class="option">${option}</li>`).join('')}`;
+
+    opt = document.querySelectorAll(".option");
+    for (let i = 0; i < opt.length; i++) {
+        opt[i].addEventListener("click", optionSelected);
+    }
+    attachOptionListeners();
 }
+
+function attachOptionListeners() {
+    opt = document.querySelectorAll(".option");
+    for (let i = 0; i < opt.length; i++) {
+        opt[i].addEventListener("click", optionSelected);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 function optionSelected(event) {
     const selectedOption = event.target.textContent;
