@@ -27,6 +27,26 @@ startBtn.addEventListener("click", function() {
     footer-basic.classList.add("activeFooter");
 });
 
+// Difficulty Select Buttons Easy / Medium / Hard
+easyBtn.addEventListener("click", function() {
+    selectedDifficulty = 'easy';
+    difficultyArea.classList.remove("active-difficulty");
+    startQuiz();
+});
+
+mediumBtn.addEventListener("click", function() {
+    selectedDifficulty = 'medium';
+    difficultyArea.classList.remove("active-difficulty");
+    startQuiz();
+});
+
+hardBtn.addEventListener("click", function() {
+    selectedDifficulty = 'hard';
+    difficultyArea.classList.remove("active-difficulty");
+    startQuiz();
+});
+
+
 // Event listener for the Begin button
 beginBtn.addEventListener("click", function() {
     instructionsArea.classList.remove("active-info");
@@ -57,25 +77,6 @@ historyBtn.addEventListener("click", function() {
     selectedCategory = 'history';
     categoryArea.classList.remove("active-category");
     difficultyArea.classList.add("active-difficulty");
-});
-
-
-easyBtn.addEventListener("click", function() {
-    selectedDifficulty = 'easy';
-    difficultyArea.classList.remove("active-difficulty");
-    startQuiz();
-});
-
-mediumBtn.addEventListener("click", function() {
-    selectedDifficulty = 'medium';
-    difficultyArea.classList.remove("active-difficulty");
-    startQuiz();
-});
-
-hardBtn.addEventListener("click", function() {
-    selectedDifficulty = 'hard';
-    difficultyArea.classList.remove("active-difficulty");
-    startQuiz();
 });
 
 nextBtn.addEventListener("click", () => {
