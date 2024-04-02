@@ -19,6 +19,8 @@ let selectedDifficulty = '';
 // Event listener for the Start button
 startBtn.addEventListener("click", function() {
     instructionsArea.classList.add("active-info");
+    header-main.classList.add("activeHeader");
+    footer-basic.classList.add("activeFooter");
 });
 
 // Event listener for the Begin button
@@ -77,7 +79,8 @@ function startQuiz() {
 }
 
 async function loadQuestion() {
-    const APIUrl = `https://opentdb.com/api.php?amount=20&category=${category}&difficulty=${difficulty}&type=multiple`;
+    const APIUrl = `https://opentdb.com/api.php?amount=20&category=15&difficulty=easy&type=multiple`;
+    console.log("Fetching questions from:", APIUrl);
     try {
         const response = await fetch(APIUrl);
         const data = await response.json();
@@ -95,14 +98,14 @@ function showQuestion() {
     options.innerHTML = question.incorrect_answers
         .concat(question.correct_answer)
         .sort(() => 0.5 - Math.random())
-        .map(option => '<li class="option">${option}</li>')
+        .map(option => `<li class="option">${option}</li>`)
         .join('');
 
     attachOptionListeners(); // Set up listeners for each option 
 }
 
 function optionSelected(event) {
-    const selectedOption = evcent.target.textContent;
+    const selectedOption = event.target.textContent;
     const correctAnswer = questionsList[currentIndex].correct_answer;
 
     if(selectedOption === correctAnswer) {
@@ -119,4 +122,12 @@ function optionSelected(event) {
     } else {
         showResultsArea();
     }
+}
+
+function disableOptions() {
+    const options = document.querySelectorAll(".option");
+    options.forEach(option => {
+        option.classList.add("disabled");
+        option.removeEventListener('click', optionsSelected);
+    });
 }
