@@ -67,11 +67,31 @@ hardBtn.addEventListener("click", () => {
     });
 });
 
+//Quiz next button
+nextBtn.addEventListener("click", () => {
+    if (questionNumber < questionsList.length) {
+        currentIndex += 1;
+        questionNumber += 1;
+        questionCounter(question_number);
+        clearInterval(counter);
+        startTimer(timeValue);
+        clearInterval(progressLine);
+        startTimerLine(widthValue);
+        nextBtn.style.display = "none";
+        showQuestion();
+    } else {
+        console.log("Questions complete!");
+        showResultArea();
+
+    }
+
+});
+
 
 // Event listener for the Begin button
-beginBtn.addEventListener("click", function() {
-    instructionsArea.classList.remove("active-info");
-    categoryArea.classList.add("active-category");
+beginBtn.addEventListener("click", () => {
+    instructionsArea.classList.remove("activeInfo");
+    categoryArea.classList.add("activeCategory");
 });
 
 // Category selection logic
@@ -100,22 +120,7 @@ historyBtn.addEventListener("click", function() {
     difficultyArea.classList.add("active-difficulty");
 });
 
-nextBtn.addEventListener("click", () => {
-    if (question-number < questionsList.length) {
-        currentIndex += 1;
-        questionNumber += 1;
-        questionCounter(question-number);
-        clearInterval(counter);
-        startTimer(timeValue);
-        clearInterval(progressLine);
-        startTimerLine(widthValue);
-        nextBtn.style.display = "none";
-        showQuestion();
-    } else {
-        console.log("Questions complete!");
-        showResultsArea();
-    }
-});
+
 
 function startQuiz() {
     if (selectedCategory === 'games') {
