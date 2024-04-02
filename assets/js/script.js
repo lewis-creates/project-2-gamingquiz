@@ -24,10 +24,19 @@ const easyBtn = document.querySelector(".easy-btn");
 const mediumBtn = document.querySelector(".medium-btn");
 const hardBtn = document.querySelector(".hard-btn");
 
-// Placeholder variables for selected category and difficulty
-let selectedCategory = '';
-let selectedDifficulty = '';
-let questionNumber = 1;
+let heading = document.getElementById("quiz-cat-heading");
+let questionElement = document.getElementById('question');
+let questionsList = [];
+let currentIndex = 0;
+let questioNumber = 1;
+let counter;
+let widthValue = 100;
+let timeValue = 15;
+let progressLine;
+let userScore = 0;
+let opt;
+let difficulty = 'easy';
+let category = '1';
 
 // Event listener for the Start button
 startBtn.addEventListener("click", function() {
@@ -279,40 +288,43 @@ function showResultArea() {
      }
  }
 
+ //timer function.
+function startTimer(time) {
+    counter = setInterval(timer, 1000);
+    function timer() {
+        timer_num.textContent = time;
+        time--;
+        if (time < 0) {
+            clearInterval(counter);
+            timerNum.textContent = "0";
 
+            // Selects correct answer when timer runs out and stops user selecting an answer.
+            let correctAns = questionsList[currentIndex].correct-answer;
+            let allOptions = options.children.length;
 
+            for (let i = 0; i < allOptions; i++) {
+                if (option_list.children[i].textContent == correctAns) {
+                    options.children[i].classList.add("correct");
+                }
+            }
+            for (let i = 0; i < allOptions; i++) {
+                option-list.children[i].classList.add("disabled");
+            }
 
-
-
-
-
-
-
-
-function optionSelected(event) {
-    const selectedOption = event.target.textContent;
-    const correctAnswer = questionsList[currentIndex].correct_answer;
-
-    if(selectedOption === correctAnswer) {
-        userScore += 1;
-        event.target.classList.add("correct");
-    } else {
-        event.target.classList.add("incorrect")
-    }
-
-    document.querySelectorAll(".option").forEach(opt => opt.classList.add("disabled"));
-
-    if(currentIndex < questionsList.length - 1) {
-        next_btn.style.display = "block";
-    } else {
-        showResultsArea();
+            //next button appears when answer selected
+            nextBtn.style.display = "block";
+        }
     }
 }
 
-function disableOptions() {
-    const options = document.querySelectorAll(".option");
-    options.forEach(option => {
-        option.classList.add("disabled");
-        option.removeEventListener('click', optionsSelected);
-    });
+function startTimerLine(time) {
+    progressLine = setInterval(timer, 160);
+    time = 100;
+    function timer() {
+        time--;
+        time_line.style.width = time + "%";
+        if (time > 500) {
+            clearInterval(progressLine);
+        }
+    }
 }
