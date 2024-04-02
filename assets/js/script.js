@@ -28,22 +28,43 @@ startBtn.addEventListener("click", function() {
 });
 
 // Difficulty Select Buttons Easy / Medium / Hard
-easyBtn.addEventListener("click", function() {
-    selectedDifficulty = 'easy';
-    difficultyArea.classList.remove("active-difficulty");
-    startQuiz();
+easyBtn.addEventListener("click", () => {
+    difficultyArea.classList.remove("activeDifficulty");
+    instructionsArea.classList.remove("activeInfo");
+    gameArea.classList.add("activeGame");
+    questionCounter(1);
+    startTimer(15);
+    startTimerLine(0);
+    difficulty = 'easy';
+    loadQuestion().then(() => {
+        showQuestion();
+    });
 });
 
-mediumBtn.addEventListener("click", function() {
-    selectedDifficulty = 'medium';
-    difficultyArea.classList.remove("active-difficulty");
-    startQuiz();
+mediumBtn.addEventListener("click", () => {
+    difficultyArea.classList.remove("activeDifficulty");
+    instructionsArea.classList.remove("activeInfo");
+    gameArea.classList.add("activeGame");
+    questionCounter(1);
+    startTimer(15);
+    startTimerLine(0);
+    difficulty = 'medium';
+    loadQuestion().then(() => {
+        showQuestion();
+    });
 });
 
-hardBtn.addEventListener("click", function() {
-    selectedDifficulty = 'hard';
-    difficultyArea.classList.remove("active-difficulty");
-    startQuiz();
+hardBtn.addEventListener("click", () => {
+    difficultyArea.classList.remove("activeDifficulty");
+    instructionsArea.classList.remove("activeInfo");
+    gameArea.classList.add("activeGame");
+    questionCounter(1);
+    startTimer(15);
+    startTimerLine(0);
+    difficulty = 'hard';
+    loadQuestion().then(() => {
+        showQuestion();
+    });
 });
 
 
