@@ -178,14 +178,106 @@ function showQuestion() {
     attachOptionListeners();
 }
 
-function attachOptionListeners() {
-    opt = document.querySelectorAll(".option");
-    for (let i = 0; i < opt.length; i++) {
-        opt[i].addEventListener("click", optionSelected);
+function optionSelected(event) {
+    console.log(event.target.textContent);
+    clearInterval(counter);
+    clearInterval(progressLine);
+    let userAns = event.target.textContent;
+    let correctAns = questionsList[currentIndex].correct-answer;
+    let allOptions = options.children.length;
+    console.log(allOptions);
+	
+	 if (userAns === correctAns) {
+        userScore += 1;
+        console.log(userScore);
+        event.target.classList.add("correct");
+        console.log("Answer is Correct!");
+        console.log(correctAns);
+        console.log('Are they equal?', userAns === correctAns);
+    } else {
+        event.target.classList.add("incorrect");
+        console.log("Answer is wrong!");
+        console.log(correctAns);
+        console.log('Are they equal?', userAns === correctAns);
     }
+    //once selected, disable all other options
+    for (let i = 0; i < allOptions; i++) {
+        if (options.children[i].textContent == correctAns) {
+            options.children[i].classList.add("correct");
+        }
+    }
+
+    // if incorrect answer, show all correct answers
+    for (let i = 0; i < allOptions; i++) {
+        options.children[i].classList.add("disabled");
+    }
+
+    nextBtn.style.display = "block";
+}
+
+// top questions counter 
+function questionCounter(questionNumber) {
+    const top_q_counter = game_area.querySelector(".total-questions");
+    let totalQTag = (`<span><p> ${questionNumber} </p>of<p> ${questionsList.length} </p>Questions</span>`);
+    top_q_counter.innerHTML = totalQTag;
+}
+
+// Display the results area at the end of the quiz
+function showResultArea() {
+    instructionsArea.classList.remove("activeInfo");
+    gameArea.classList.remove("activeGame");
+    resultArea.classList.add("activeResult");
 
 }
 
+//Results area Function and add active results window
+function showResultArea() {
+    instructionsArea.classList.remove("activeInfo");
+    gameArea.classList.remove("activeGame");
+    resultArea.classList.add("activeResult");
+
+    const scoreText = resultArea.querySelector(".score-value");
+
+    if (userScore) {
+        let scoreTag = (`<span><p> ${userScore} </p> out of <p> ${questionsList.length}</p></span>`);
+        scoreText.innerHTML = scoreTag;
+    }
+
+    //Calculate percentage function and round to whole number
+    let percentage = function calculatePercentage(x, y) {
+        return Math.round((x / y) * 100);
+    };
+
+     // store percentage function result and put into HTML
+     let result = percentage(userScore, questionsList.length) + "%";
+     const percentText = document.querySelector(".percentage");
+ 
+     let percentTag = (`<span>Percentage<p> ${result} </p><span>`);
+     percentText.innerHTML = percentTag;
+ 
+     //Generaging a grade from the users percentage
+     const gradeText = document.querySelector(".grade");
+ 
+     if (result >= 70 + '%') {
+         let gradeTag = (`<span>Grade<p> ${'A'} </p></span>`);
+         gradeText.innerHTML = gradeTag;
+     } else if (result >= 60 + '%') {
+         let gradeTag = (`<span>Grade<p> ${'B'} </p></span>`);
+         gradeText.innerHTML = gradeTag;
+     } else if (result >= 50 + '%') {
+         let gradeTag = (`<span>Grade<p> ${'C'} </p></span>`);
+         gradeText.innerHTML = gradeTag;
+     } else if (result >= 40 + '%') {
+         let gradeTag = (`<span>Grade<p> ${'D'} </p></span>`);
+         gradeText.innerHTML = gradeTag;
+     } else if (result >= 30 + '%') {
+         let gradeTag = (`<span>Grade<p> ${'E'} </p></span>`);
+         gradeText.innerHTML = gradeTag;
+     } else if (result < 29 + '%') {
+         let gradeTag = (`<span>Grade<p> ${'U'} </p></span>`);
+         gradeText.innerHTML = gradeTag;
+     }
+ }
 
 
 
