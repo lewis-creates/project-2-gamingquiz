@@ -5,6 +5,16 @@ const nextBtn = document.querySelector(".next-btn");
 const startBtn = document.querySelector(".start-btn");
 const instructionsArea = document.querySelector(".instructions-area");
 const beginBtn = document.querySelector(".begin-btn");
+const gameArea = document.querySelector(".game-area");
+const optionList = document.querySelector(".option-list");
+const options = document.querySelector('.option-list');
+const exitBtn = document.querySelector(".exit_btn");
+const timerNum = document.querySelector(".progress_text");
+const timeLine = document.querySelector(".progress_bar");
+const resultArea = document.querySelector(".result_area");
+const headerMain = document.querySelector(".header_main");
+const footerBasic = document.querySelector(".footer_basic");
+const quit = document.querySelector(".quit");
 const categoryArea = document.querySelector(".category-area");
 const difficultyArea = document.querySelector(".difficulty-area");
 const gameBtn = document.querySelector(".game-btn");
@@ -23,8 +33,8 @@ let questionNumber = 1;
 // Event listener for the Start button
 startBtn.addEventListener("click", function() {
     instructionsArea.classList.add("active-info");
-    header-main.classList.add("activeHeader");
-    footer-basic.classList.add("activeFooter");
+    headerMain.classList.add("activeHeader");
+    footerBasic.classList.add("activeFooter");
 });
 
 // Difficulty Select Buttons Easy / Medium / Hard
@@ -95,31 +105,44 @@ beginBtn.addEventListener("click", () => {
 });
 
 // Category selection logic
-gameBtn.addEventListener("click", function() {
-    selectedCategory = 'game';
-    categoryArea.classList.remove("active-category");
-    difficultyArea.classList.add("active-difficulty");
+gameBtn.addEventListener("click", () => {
+    categoryArea.classList.remove("activeCategory");
+    difficultyArea.classList.add("activeDifficulty");
+    category = '17';
+    heading.innerText = "Games";
 });
 
-// Difficulty selection logic 
-genreBtn.addEventListener("click", function() {
-    selectedCategory = 'genre';
-    categoryArea.classList.remove("active-category");
-    difficultyArea.classList.add("active-difficulty");
+
+genreBtn.addEventListener("click", () => {
+    categoryArea.classList.remove("activeCategory");
+    difficultyArea.classList.add("activeDifficulty");
+    category = '15';
+    heading.innerText = "Genre";
 });
 
-hardwareBtn.addEventListener("click", function() {
-    selectedCategory = 'hardware';
-    categoryArea.classList.remove("active-category");
-    difficultyArea.classList.add("active-difficulty");
+hardwareBtn.addEventListener("click", () => {
+    categoryArea.classList.remove("activeCategory");
+    difficultyArea.classList.add("activeDifficulty");
+    category = '11';
+    heading.innerText = "Hardware";
 });
 
-historyBtn.addEventListener("click", function() {
-    selectedCategory = 'history';
-    categoryArea.classList.remove("active-category");
-    difficultyArea.classList.add("active-difficulty");
+historyBtn.addEventListener("click", () => {
+    categoryArea.classList.remove("activeCategory");
+    difficultyArea.classList.add("activeDifficulty");
+    category = '9';
+    heading.innerText = "History";
 });
 
+// Reloads the winodw on resart test button click
+quit.addEventListener("click", () => {
+    window.location.reload();
+});
+
+//Exits the quiz to start
+exitBtn.addEventListener("click", () => {
+    instructionsArea.classList.remove("activeInfo");
+});
 
 
 function startQuiz() {
