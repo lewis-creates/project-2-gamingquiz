@@ -1,4 +1,7 @@
+import { customQuestions } from '.assets/js/questions.js';
+
 // Selecting elements from the DOM
+const nextBtn = document.querySelector(".next-btn");
 const startBtn = document.querySelector(".start-btn");
 const instructionsArea = document.querySelector(".instructions-area");
 const beginBtn = document.querySelector(".begin-btn");
@@ -15,6 +18,7 @@ const hardBtn = document.querySelector(".hard-btn");
 // Placeholder variables for selected category and difficulty
 let selectedCategory = '';
 let selectedDifficulty = '';
+let questionNumber = 1;
 
 // Event listener for the Start button
 startBtn.addEventListener("click", function() {
@@ -74,12 +78,35 @@ hardBtn.addEventListener("click", function() {
     startQuiz();
 });
 
+nextBtn.addEventListener("click", () => {
+    if (question-number < questionsList.length) {
+        currentIndex += 1;
+        questionNumber += 1;
+        questionCounter(question-number);
+        clearInterval(counter);
+        startTimer(timeValue);
+        clearInterval(progressLine);
+        startTimerLine(widthValue);
+        nextBtn.style.display = "none";
+        showQuestion();
+    } else {
+        console.log("Questions complete!");
+        showResultsArea();
+    }
+});
+
 function startQuiz() {
-    console.log("Quiz started with difficulty: " + selectedDifficulty)
+    if (selectedCategory === 'games') {
+        loadQuestion('15');
+    } else {
+        questionsList = customQuestions[selectedCategory] || [];
+        currentIndex = 0;
+        showQuestion();
+    }
 }
 
-async function loadQuestion() {
-    const APIUrl = `https://opentdb.com/api.php?amount=20&category=15&difficulty=easy&type=multiple`;
+async function loadQuestion(categoryId) {
+    const APIUrl = `https://opentdb.com/api.php?amount=20&category=15&type=multiple`;
     console.log("Fetching questions from:", APIUrl);
     try {
         const response = await fetch(APIUrl);
