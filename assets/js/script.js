@@ -1,4 +1,3 @@
-
 // Selecting elements from the DOM
 const nextBtn = document.querySelector(".next-btn");
 const startBtn = document.querySelector(".start-btn");
@@ -152,7 +151,7 @@ exitBtn.addEventListener("click", () => {
 
 async function loadQuestion(categoryId) {
     if (categoryId) {
-        const APIUrl = `https://opentdb.com/api.php?amount=20&category=${categoryId}&type=multiple`;
+        const APIUrl = `https://opentdb.com/api.php?amount=20&category=9&type=multiple`;
         console.log("Fetching questions from:", APIUrl);
         try {
             const response = await fetch(APIUrl);
@@ -173,8 +172,8 @@ async function loadQuestion(categoryId) {
 // Display Question and options
 function showQuestion() {
     let question = questionsList[currentIndex];
-    let correctAnswer = question.correct-answer;
-    let incorrectAnswer = question.incorrect-answers;
+    let correctAnswer = question.correct_answer;
+    let incorrectAnswer = question.incorrect_answers;
 
     // Shuffle the incorrect answers array
     incorrectAnswer.sort(() => Math.random() - 0.5);
@@ -307,12 +306,12 @@ function startTimer(time) {
             let allOptions = options.children.length;
 
             for (let i = 0; i < allOptions; i++) {
-                if (option_list.children[i].textContent == correctAns) {
+                if (optionsList.children[i].textContent == correctAns) {
                     options.children[i].classList.add("correct");
                 }
             }
             for (let i = 0; i < allOptions; i++) {
-                option-list.children[i].classList.add("disabled");
+                optionList.children[i].classList.add("disabled");
             }
 
             //next button appears when answer selected
