@@ -28,7 +28,7 @@ let heading = document.getElementById("quiz-cat-heading");
 let questionElement = document.getElementById('question');
 let questionsList = [];
 let currentIndex = 0;
-let questioNumber = 1;
+let questionNumber = 1;
 let counter;
 let widthValue = 100;
 let timeValue = 15;
@@ -41,15 +41,13 @@ let category = '1';
 // Event listener for the Start button
 startBtn.addEventListener("click", function() {
     instructionsArea.classList.add("active-info");
-    headerMain.classList.add("activeHeader");
-    footerBasic.classList.add("activeFooter");
 });
 
 // Difficulty Select Buttons Easy / Medium / Hard
 easyBtn.addEventListener("click", () => {
-    difficultyArea.classList.remove("activeDifficulty");
-    instructionsArea.classList.remove("activeInfo");
-    gameArea.classList.add("activeGame");
+    difficultyArea.classList.remove("active-difficulty");
+    instructionsArea.classList.remove("active-info");
+    gameArea.classList.add("active-game");
     questionCounter(1);
     startTimer(15);
     startTimerLine(0);
@@ -60,9 +58,9 @@ easyBtn.addEventListener("click", () => {
 });
 
 mediumBtn.addEventListener("click", () => {
-    difficultyArea.classList.remove("activeDifficulty");
-    instructionsArea.classList.remove("activeInfo");
-    gameArea.classList.add("activeGame");
+    difficultyArea.classList.remove("active-difficulty");
+    instructionsArea.classList.remove("active-info");
+    gameArea.classList.add("active-game");
     questionCounter(1);
     startTimer(15);
     startTimerLine(0);
@@ -73,9 +71,9 @@ mediumBtn.addEventListener("click", () => {
 });
 
 hardBtn.addEventListener("click", () => {
-    difficultyArea.classList.remove("activeDifficulty");
-    instructionsArea.classList.remove("activeInfo");
-    gameArea.classList.add("activeGame");
+    difficultyArea.classList.remove("active-difficulty");
+    instructionsArea.classList.remove("active-info");
+    gameArea.classList.add("active-game");
     questionCounter(1);
     startTimer(15);
     startTimerLine(0);
@@ -108,36 +106,36 @@ nextBtn.addEventListener("click", () => {
 
 // Event listener for the Begin button
 beginBtn.addEventListener("click", () => {
-    instructionsArea.classList.remove("activeInfo");
-    categoryArea.classList.add("activeCategory");
+    instructionsArea.classList.remove("active-info");
+    categoryArea.classList.add("active-category");
 });
 
 // Category selection logic
 gameBtn.addEventListener("click", () => {
-    categoryArea.classList.remove("activeCategory");
-    difficultyArea.classList.add("activeDifficulty");
+    categoryArea.classList.remove("active-category");
+    difficultyArea.classList.add("active-difficulty");
     category = '17';
     heading.innerText = "Games";
 });
 
 
 genreBtn.addEventListener("click", () => {
-    categoryArea.classList.remove("activeCategory");
-    difficultyArea.classList.add("activeDifficulty");
+    categoryArea.classList.remove("active-category");
+    difficultyArea.classList.add("active-difficulty");
     category = '15';
     heading.innerText = "Genre";
 });
 
 hardwareBtn.addEventListener("click", () => {
-    categoryArea.classList.remove("activeCategory");
-    difficultyArea.classList.add("activeDifficulty");
+    categoryArea.classList.remove("active-category");
+    difficultyArea.classList.add("active-difficulty");
     category = '11';
     heading.innerText = "Hardware";
 });
 
 historyBtn.addEventListener("click", () => {
-    categoryArea.classList.remove("activeCategory");
-    difficultyArea.classList.add("activeDifficulty");
+    categoryArea.classList.remove("active-category");
+    difficultyArea.classList.add("active-difficulty");
     category = '9';
     heading.innerText = "History";
 });
@@ -149,20 +147,26 @@ quit.addEventListener("click", () => {
 
 //Exits the quiz to start
 exitBtn.addEventListener("click", () => {
-    instructionsArea.classList.remove("activeInfo");
+    instructionsArea.classList.remove("active-info");
 });
 
 async function loadQuestion(categoryId) {
-    const APIUrl = `https://opentdb.com/api.php?amount=20&category=15&type=multiple`;
-    console.log("Fetching questions from:", APIUrl);
-    try {
-        const response = await fetch(APIUrl);
-        const data = await response.json();
-        questionsList = data.results;
+    if (categoryId) {
+        const APIUrl = `https://opentdb.com/api.php?amount=20&category=${categoryId}&type=multiple`;
+        console.log("Fetching questions from:", APIUrl);
+        try {
+            const response = await fetch(APIUrl);
+            const data = await response.json();
+            questionsList = data.results;
+            currentIndex = 0;
+            showQuestion();
+        } catch (error) {
+            console.error("Error loading questions:", error);
+        }
+    } else {
+        questionsList = customQuestions; 
         currentIndex = 0;
         showQuestion();
-    } catch (error) {
-        console.error("Error loading questions:", error);
     }
 }
 
@@ -292,7 +296,7 @@ function showResultArea() {
 function startTimer(time) {
     counter = setInterval(timer, 1000);
     function timer() {
-        timer_num.textContent = time;
+        timerNum.textContent = time;
         time--;
         if (time < 0) {
             clearInterval(counter);
@@ -322,7 +326,7 @@ function startTimerLine(time) {
     time = 100;
     function timer() {
         time--;
-        time_line.style.width = time + "%";
+        timeLine.style.width = time + "%";
         if (time > 500) {
             clearInterval(progressLine);
         }
