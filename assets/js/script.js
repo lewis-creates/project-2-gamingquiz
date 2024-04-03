@@ -85,16 +85,16 @@ hard_btn.addEventListener("click", () => {
 });
 
 //Quiz next button
-nextBtn.addEventListener("click", () => {
-    if (questionNumber < questionsList.length) {
+next_btn.addEventListener("click", () => {
+    if (question_number < questionsList.length) {
         currentIndex += 1;
-        questionNumber += 1;
+        question_number += 1;
         questionCounter(question_number);
         clearInterval(counter);
         startTimer(timeValue);
         clearInterval(progressLine);
         startTimerLine(widthValue);
-        nextBtn.style.display = "none";
+        next_btn.style.display = "none";
         showQuestion();
     } else {
         console.log("Questions complete!");
@@ -106,39 +106,39 @@ nextBtn.addEventListener("click", () => {
 
 
 // Event listener for the Begin button
-beginBtn.addEventListener("click", () => {
-    instructionsArea.classList.remove("active-info");
-    categoryArea.classList.add("active-category");
+begin_btn.addEventListener("click", () => {
+    instructions_area.classList.remove("activeInfo");
+    category_area.classList.add("activeCategory");
 });
 
 // Category selection logic
-gameBtn.addEventListener("click", () => {
-    categoryArea.classList.remove("active-category");
-    difficultyArea.classList.add("active-difficulty");
+sci_btn.addEventListener("click", () => {
+    category_area.classList.remove("activeCategory");
+    difficulty_area.classList.add("activeDifficulty");
     category = '17';
-    heading.innerText = "Games";
+    heading.innerText = "Science & Nature";
 });
 
 
-genreBtn.addEventListener("click", () => {
-    categoryArea.classList.remove("active-category");
-    difficultyArea.classList.add("active-difficulty");
+games_btn.addEventListener("click", () => {
+    category_area.classList.remove("activeCategory");
+    difficulty_area.classList.add("activeDifficulty");
     category = '15';
-    heading.innerText = "Genre";
+    heading.innerText = "Video Games";
 });
 
-hardwareBtn.addEventListener("click", () => {
-    categoryArea.classList.remove("active-category");
-    difficultyArea.classList.add("active-difficulty");
+film_btn.addEventListener("click", () => {
+    category_area.classList.remove("activeCategory");
+    difficulty_area.classList.add("activeDifficulty");
     category = '11';
-    heading.innerText = "Hardware";
+    heading.innerText = "Films";
 });
 
-historyBtn.addEventListener("click", () => {
-    categoryArea.classList.remove("active-category");
-    difficultyArea.classList.add("active-difficulty");
+general_btn.addEventListener("click", () => {
+    category_area.classList.remove("activeCategory");
+    difficulty_area.classList.add("activeDifficulty");
     category = '9';
-    heading.innerText = "History";
+    heading.innerText = "General Knowledge";
 });
 
 // Reloads the winodw on resart test button click
