@@ -39,12 +39,12 @@ h2 {
 }
 
 /* Styling for various components*/
-.start-btn,
-.instructions-area,
-.difficulty-area,
-.category-area,
+.start_btn,
+.instructions_area,
+.difficulty_area,
+.category_area,
 .game_area,
-.result-area {
+.result_area {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,11 +53,11 @@ h2 {
 }
 
 /* Styling for active state of components */
-.instructions-area.active-info,
-.difficulty-area.active-difficulty,
-.category-area.active-category,
-.game-area.active-game,
-.result-area.active-result {
+.instructions_area.activeInfo,
+.difficulty_area.activeDifficulty,
+.category_area.activeCategory,
+.game_area.activeGame,
+.result_area.activeResult {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -65,7 +65,7 @@ h2 {
 }
 
 /* Styling for start button */
-.start-btn {
+.start_btn {
     font-size: 30px;
     font-weight: 600;
     border: 1px solid #ffffff;
@@ -77,12 +77,12 @@ h2 {
     color: #ffffff
 }
 
-.start-btn:hover {
+.start_btn:hover {
     background: #005a9e;
 }
 
 @media only screen and (min-width: 1040px) {
-    .start-btn:hover {
+    .start_btn:hover {
         background: #b1d1f0;
         color: rgb(3, 46, 103);
         transition: all 0.3s ease;
@@ -92,7 +92,7 @@ h2 {
 
 
 /* Styling for category area */
-.category-area {
+.category_area {
     padding: 20px;
     width: 60%;
     border-radius: 5px;
@@ -104,7 +104,7 @@ h2 {
 }
 
 /* Styling for category heading */
-.category-area .category-heading {
+.category_area .category_heading {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +119,7 @@ h2 {
 }
 
 /* Styling for difficulty area */
-.difficulty-area {
+.difficulty_area {
     padding: 20px;
     width: 60%;
     border-radius: 5px;
@@ -131,7 +131,7 @@ h2 {
 }
 
 /* Styling for difficulty heading */
-.difficulty-area .difficulty-heading {
+.difficulty_area .difficulty_heading {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,7 +146,7 @@ h2 {
 }
 
 /* Styling for instructions area */
-.instructions-area {
+.instructions_area {
     padding: 20px;
     width: 60%;
     border-radius: 5px;
@@ -158,7 +158,7 @@ h2 {
 }
 
 /* Styling for instructions heading */
-.instructions-area .instructions-heading {
+.instructions_area .instructions_heading {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,7 +173,7 @@ h2 {
 }
 
 /* Styling for instructions list items */
-.instructions-area .instructions-list .inst {
+.instructions_area .instructions_list .inst {
     height: 60px;
     width: 100%;
     margin: 5px 0;
@@ -182,7 +182,7 @@ h2 {
 }
 
 /* Styling for span elements within instructions area */
-.instructions-area span {
+.instructions_area span {
     padding: 0 5px;
     font-weight: 600;
     color: #00ff00;
@@ -231,7 +231,7 @@ h2 {
 }
 
 /* Styling for game area */
-.game-area {
+.game_area {
     min-width: 60%;
     background: #303030;
     border-radius: 5px;
@@ -242,7 +242,7 @@ h2 {
 }
 
 /* Styling for header within game area */
-.game-area header {
+.game_area header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,7 +258,7 @@ h2 {
 }
 
 /* Styling for title within game area header */
-.game-area header .title {
+.game_area header .title {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -267,7 +267,7 @@ h2 {
 }
 
 /* Styling for total questions within game area header */
-.game-area header .total-questions span {
+.game_area header .total_questions span {
     display: flex;
     user-select: none;
     font-size: 20px;
@@ -275,25 +275,25 @@ h2 {
 }
 
 /* Styling for paragraphs within total questions span */
-header .total-questions span p {
+header .total_questions span p {
     font-weight: 500;
     padding: 0px 5px;
 }
 
 /* Styling for first child paragraph within total questions span */
-header .total-questions span p:first-child {
+header .total_questions span p:first-child {
     padding-left: 0px;
 }
 
 /* Styling for time line */
-.time-line {
+.time_line {
     width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
 }
 
-.time-line .progress {
+.time_line .progress {
     position: relative;
     width: 100%;
     height: 40px;
@@ -304,7 +304,7 @@ header .total-questions span p:first-child {
     border: 3px solid black;
 }
 
-.time-line .progress .progress-bar {
+.time_line .progress .progress_bar {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -313,7 +313,7 @@ header .total-questions span p:first-child {
     transition: width 0.25s ease;
 }
 
-.time-line .progress .progress-text {
+.time_line .progress .progress_text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -324,7 +324,7 @@ header .total-questions span p:first-child {
 }
 
 /* Test section styling */
-.game-area .play-area {
+.game_area .play_area {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,14 +333,14 @@ header .total-questions span p:first-child {
     background: #E4E8FA;
 }
 
-.game-area .play-area .question-text {
+.game_area .play_area .question_text {
     font-size: 25px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.game-area .play-area .option-list {
+.game_area .play_area .option_list {
     padding: 20px 0;
     display: flex;
     align-items: center;
@@ -348,7 +348,7 @@ header .total-questions span p:first-child {
     padding: 10px;
 }
 
-.game-area .option-list li {
+.game_area .option_list li {
     background: #b1d1f0;
     border: 1px solid #032E67;
     border-radius: 5px;
@@ -368,14 +368,14 @@ header .total-questions span p:first-child {
     list-style-type: none;
 }
 
-.game-area .option-list .option:last-child {
+.game_area .option_list .option:last-child {
     margin-bottom: 30px;
     margin-right: 0px;
 }
 
 /* option list in game area hover color */
 @media only screen and (min-width: 1040px) {
-    .game-area .option-list li:hover {
+    .game_area .option_list li:hover {
         background: #032E67;
         color: #fff;
         transition: all is ease;
@@ -384,24 +384,24 @@ header .total-questions span p:first-child {
 }
 
 /* selecting correct answer and incorrect answer */
-.option-list .option.correct {
+.option_list .option.correct {
     color: #175e1a;
     background: #64ad75;
     border-color: #03290c;
 }
 
-.option-list .option.incorrect {
+.option_list .option.incorrect {
     color: #721c24;
     background: #ed3545;
     border-color: #f5c6cb;
 }
 
-.option-list .option.disabled {
+.option_list .option.disabled {
     pointer-events: none;
 }
 
 /* Game area Footer question and questions total in header */
-.game-area footer {
+.game_area footer {
     height: 60px;
     width: 100%;
     padding: 0 30px;
@@ -411,7 +411,7 @@ header .total-questions span p:first-child {
 }
 
 /* Footer game area next button */ 
-footer .next-btn {
+footer .next_btn {
     display: none;
     height: 40px;
     padding: 0 13px;
@@ -428,7 +428,7 @@ footer .next-btn {
 }
 
 @media only screen and (min-width: 1040px) {
-    footer .next-btn:hover {
+    footer .next_btn:hover {
         background: #b1d1f0;
         box-shadow: 8px 8px 8px black;
         color: #032E67;
@@ -436,7 +436,7 @@ footer .next-btn {
 }
 
 /* Results window styling */ 
-.result-area {
+.result_area {
     background: #E4E8FA;
     padding: 25px 30px;
     border-radius: 5px;
@@ -451,12 +451,12 @@ footer .next-btn {
     box-shadow: 2px 2px 2px black;
 }
 
-.result-area .complete-text {
+.result_area .complete_text {
     font-size: 40px;
     font-weight: 500;
 }
 
-.result-area .percentage {
+.result_area .percentage {
     font-size: 25px;
     font-weight: 500;
     background: linear-gradient(to left, #b1d1f0, #487EC5);
@@ -468,7 +468,7 @@ footer .next-btn {
     box-shadow: 2px 2px 2px black;
 }
 
-.result-area .grade {
+.result_area .grade {
     font-size: 30px;
     font-weight: 500;
     background: linear-gradient(to left, #b1d1f0, #487ec5);
@@ -479,14 +479,14 @@ footer .next-btn {
     box-shadow: 2px 2px 2px black;
 }
 
-.result-area .score-value span {
+.result_area .score_value span {
     display: flex;
     margin: 10px 10px;
     font-size: 20px;
     font-weight: 500;
 }
 
-.score-value span p {
+.score_value span p {
     font-weight: 500;
     padding: 0 4px;
 }
@@ -497,7 +497,7 @@ footer .next-btn {
 }
 
 /* Footer styling */
-.footer-basic {
+.footer_basic {
     position: absolute;
     bottom: 0%;
     width: 100%;
@@ -506,7 +506,7 @@ footer .next-btn {
     color: #032E67;
 }
 
-.footer-basic #footer-li {
+.footer_basic #footer-li {
     padding: 0 10px;
     list-style: none;
     text-align: center;
@@ -515,7 +515,7 @@ footer .next-btn {
     margin-bottom: 0;
 }
 
-.footer-basic #footer-li a {
+.footer_basic #footer-li a {
     color: #032E67;
     text-decoration: none;
     opacity: 1;
@@ -523,12 +523,12 @@ footer .next-btn {
 }
 
 @media only screen and (min-width: 1040px) {
-    .footer-basic #footer-li a:hover {
+    .footer_basic #footer-li a:hover {
         opacity: 1;
     }
 }
 
-.footer-basic .social {
+.footer_basic .social {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -542,7 +542,7 @@ footer .next-btn {
     font-family: Lato, sans-serif;
 }
 
-.footer-basic .social>a {
+.footer_basic .social>a {
     font-size: 24px;
     width: 40px;
     height: 38px;
@@ -557,14 +557,14 @@ footer .next-btn {
 }
 
 @media only screen and (min-width: 1040px) {
-    .footer-basic .social>a:hover {
+    .footer_basic .social>a:hover {
         opacity: 0.9;
         transform: scale(0.9);
         color: #0f6bc7;
     }
 }
 
-.footer-basic .copyright {
+.footer_basic .copyright {
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
@@ -588,20 +588,20 @@ footer .next-btn {
     }
 
     /* Hide header and footer */
-    .header-main.activeHeader {
+    .header_main.activeHeader {
         display: none;
     }
 
-    .footer-basic.activeFooter {
+    .footer_basic.activeFooter {
         display: none;
     }
 
-    .footer-basic {
+    .footer_basic {
         bottom: 10%;
     }
 
      /* Category area */
-     #cat-buttons {
+     #cat_buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -610,7 +610,7 @@ footer .next-btn {
         margin-top: 180px;
     }
 
-    .category-heading {
+    .category_heading {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -618,14 +618,14 @@ footer .next-btn {
         padding: 5px;
     }
 
-    .category-area {
+    .category_area {
         width: 90%;
         height: 85%;
         padding: 0px 20px;
     }
 
     /* Difficulty area */
-    #diff-buttons {
+    #diff_buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -634,7 +634,7 @@ footer .next-btn {
         margin-top: 130px;
     }
 
-    .difficulty-heading {
+    .difficulty_heading {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -642,38 +642,38 @@ footer .next-btn {
         padding: 5px;
     }
 
-    .difficulty-area {
+    .difficulty_area {
         width: 90%;
         height: 70%;
         padding: 0px 20px;
     }
 
      /* Instructions area*/
-     .instructions-area {
+     .instructions_area {
         width: 90%;
         padding: 0px 20px;
     }
 
-    .begin-btn {
+    .begin_btn {
         width: 100px;
     }
 
-    .instructions-area .instructions-heading .difficulty-heading .category-heading {
+    .instructions_area .instructions_heading .difficulty_heading .category_heading {
         font-size: 20px;
         padding: 5px;
     }
 
-    .instructions-area .instructions-list .inst {
+    .instructions_area .instructions_list .inst {
         margin-bottom: 30px;
         margin-top: 20px;
         height: auto;
         font-size: 15px;
     }
 
-    .buttons .genre-btn,
-    button.game-btn,
-    button.hardware-btn,
-    button.history-btn {
+    .buttons .genre_btn,
+    button.game_btn,
+    button.hardware_btn,
+    button.history_btn {
         height: 70px;
         width: 160px;
     }
@@ -688,16 +688,16 @@ footer .next-btn {
         padding: 5px;
     }
 
-    .game-area {
+    .game_area {
         width: 95%;
         box-shadow: 2px 2px 2px black;
     }
 
-    .game-area .play_area {
+    .game_area .play_area {
         padding: 0px;
     }
 
-    .game-area .play_area .question_text {
+    .game_area .play_area .question_text {
         font-size: 20px;
         font-weight: 600;
         text-align: center;
@@ -705,13 +705,13 @@ footer .next-btn {
         padding: 5px;
     }
 
-    .game-area .play-area .option_list {
+    .game_area .play_area .option_list {
         padding: 0px 0px 15px 0px;
         display: block;
         min-width: 85%;
     }
 
-    .game-area .option_list .option {
+    .game_area .option_list .option {
         padding: 5px 15px;
         margin-bottom: 5px;
         max-height: 100vh;
@@ -722,15 +722,15 @@ footer .next-btn {
         min-width: 0px;
     }
 
-    .game-area .option_list .option:last-child {
+    .game_area .option_list .option:last-child {
         margin-bottom: 10px;
     }
 
-    .game-area .option_list .option:first-child {
+    .game_area .option_list .option:first-child {
         margin-top: 10px;
     }
 
-    .result-area {
+    .result_area {
         width: auto;
     }
 
@@ -741,7 +741,7 @@ footer .next-btn {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1300px) {
-    .instructions-area {
+    .instructions_area {
         display: flex;
         flex-direction: column;
         align-items: center;
