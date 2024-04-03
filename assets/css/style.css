@@ -670,10 +670,9 @@ footer .next_btn {
         font-size: 15px;
     }
 
-    .buttons .genre_btn,
-    button.game_btn,
-    button.hardware_btn,
-    button.history_btn {
+    .buttons .sci_btn,
+    button.games_btn,
+    button.general_btn {
         height: 70px;
         width: 160px;
     }
