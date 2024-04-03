@@ -38,8 +38,10 @@ let difficulty = 'easy';
 let category = '1';
 
 // Event listener for the Start button
-startBtn.addEventListener("click", function() {
-    instructionsArea.classList.add("active-info");
+start_btn.addEventListener("click", () => {
+    instructions_area.classList.add("activeInfo");
+    header_main.classList.add("activeHeader");
+    footer_basic.classList.add("activeFooter");
 });
 
 // Difficulty Select Buttons Easy / Medium / Hard
