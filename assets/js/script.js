@@ -45,10 +45,10 @@ start_btn.addEventListener("click", () => {
 });
 
 // Difficulty Select Buttons Easy / Medium / Hard
-easyBtn.addEventListener("click", () => {
-    difficultyArea.classList.remove("active-difficulty");
-    instructionsArea.classList.remove("active-info");
-    gameArea.classList.add("active-game");
+easy_btn.addEventListener("click", () => {
+    difficulty_area.classList.remove("activeDifficulty");
+    instructions_area.classList.remove("activeInfo");
+    game_area.classList.add("activeGame");
     questionCounter(1);
     startTimer(15);
     startTimerLine(0);
