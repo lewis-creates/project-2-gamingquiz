@@ -147,8 +147,8 @@ quit.addEventListener("click", () => {
 });
 
 //Exits the quiz to start
-exitBtn.addEventListener("click", () => {
-    instructionsArea.classList.remove("active-info");
+exit_btn.addEventListener("click", () => {
+    instructions_area.classList.remove("activeInfo");
 });
 
 async function loadQuestion(categoryId) {
