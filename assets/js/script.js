@@ -228,17 +228,17 @@ function optionSelected(event) {
 }
 
 // top questions counter 
-function questionCounter(questionNumber) {
-    const top_q_counter = game_area.querySelector(".total-questions");
-    let totalQTag = (`<span><p> ${questionNumber} </p>of<p> ${questionsList.length} </p>Questions</span>`);
+function questionCounter(question_number) {
+    const top_q_counter = game_area.querySelector(".total_questions");
+    let totalQTag = (`<span><p> ${question_number} </p>of<p> ${questionsList.length} </p>Questions</span>`);
     top_q_counter.innerHTML = totalQTag;
 }
 
 // Display the results area at the end of the quiz
 function showResultArea() {
-    instructionsArea.classList.remove("activeInfo");
-    gameArea.classList.remove("activeGame");
-    resultArea.classList.add("activeResult");
+    instructions_area.classList.remove("activeInfo");
+    game_area.classList.remove("activeGame");
+    result_area.classList.add("activeResult");
 
 }
 
