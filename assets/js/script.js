@@ -183,6 +183,13 @@ function showQuestion() {
     attachOptionListeners();
 }
 
+function attachOptionListeners() {
+    opt = document.querySelectorAll(".option");
+    for (let i = 0; i < opt.length; i++) {
+        opt[i].addEventListener("click", optionSelected);
+    }
+}
+
 function optionSelected(event) {
     console.log(event.target.textContent);
     clearInterval(counter);
