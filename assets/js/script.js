@@ -195,7 +195,7 @@ function optionSelected(event) {
     clearInterval(counter);
     clearInterval(progressLine);
     let userAns = event.target.textContent;
-    let correctAns = questionsList[currentIndex].correct-answer;
+    let correctAns = questionsList[currentIndex].correct_answer;
     let allOptions = options.children.length;
     console.log(allOptions);
 	
@@ -224,7 +224,7 @@ function optionSelected(event) {
         options.children[i].classList.add("disabled");
     }
 
-    nextBtn.style.display = "block";
+    next_btn.style.display = "block";
 }
 
 // top questions counter 
