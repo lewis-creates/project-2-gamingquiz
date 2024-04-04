@@ -151,24 +151,15 @@ exit_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
 });
 
-async function loadQuestion(categoryId) {
-    if (categoryId) {
-        const APIUrl = `https://opentdb.com/api.php?amount=20&category=9&type=multiple`;
-        console.log("Fetching questions from:", APIUrl);
-        try {
-            const response = await fetch(APIUrl);
-            const data = await response.json();
-            questionsList = data.results;
-            currentIndex = 0;
-            showQuestion();
-        } catch (error) {
-            console.error("Error loading questions:", error);
-        }
-    } else {
-        questionsList = customQuestions; 
-        currentIndex = 0;
+async function loadQuestion() {
+        const APIUrl = `https://opentdb.com/api.php?amount=20&category=${category}&difficulty=${difficulty}&type=multiple`;
+        const result = await fetch(APIUrl);
+        const data = await result.json();
+        console.time('APIUrl');
+        questionsList = data.results;
+        console.log(questionsList);
+        questionCounter(1);
         showQuestion();
-    }
 }
 
 // Display Question and options
