@@ -244,11 +244,11 @@ function showResultArea() {
 
 //Results area Function and add active results window
 function showResultArea() {
-    instructionsArea.classList.remove("activeInfo");
-    gameArea.classList.remove("activeGame");
-    resultArea.classList.add("activeResult");
+    instructions_area.classList.remove("activeInfo");
+    game_area.classList.remove("activeGame");
+    result_area.classList.add("activeResult");
 
-    const scoreText = resultArea.querySelector(".score-value");
+    const scoreText = result_area.querySelector(".score_value");
 
     if (userScore) {
         let scoreTag = (`<span><p> ${userScore} </p> out of <p> ${questionsList.length}</p></span>`);
@@ -295,27 +295,27 @@ function showResultArea() {
 function startTimer(time) {
     counter = setInterval(timer, 1000);
     function timer() {
-        timerNum.textContent = time;
+        timer_num.textContent = time;
         time--;
         if (time < 0) {
             clearInterval(counter);
-            timerNum.textContent = "0";
+            timer_num.textContent = "0";
 
             // Selects correct answer when timer runs out and stops user selecting an answer.
-            let correctAns = questionsList[currentIndex].correct-answer;
+            let correctAns = questionsList[currentIndex].correct_answer;
             let allOptions = options.children.length;
 
             for (let i = 0; i < allOptions; i++) {
-                if (optionsList.children[i].textContent == correctAns) {
+                if (options_list.children[i].textContent == correctAns) {
                     options.children[i].classList.add("correct");
                 }
             }
             for (let i = 0; i < allOptions; i++) {
-                optionList.children[i].classList.add("disabled");
+                option_list.children[i].classList.add("disabled");
             }
 
             //next button appears when answer selected
-            nextBtn.style.display = "block";
+            next_btn.style.display = "block";
         }
     }
 }
@@ -325,7 +325,7 @@ function startTimerLine(time) {
     time = 100;
     function timer() {
         time--;
-        timeLine.style.width = time + "%";
+        time_line.style.width = time + "%";
         if (time > 500) {
             clearInterval(progressLine);
         }
