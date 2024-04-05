@@ -1,39 +1,21 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Trivia Quiz: General Knowledge Quiz
 
-Welcome,
+! Placeholder for center image, 
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This interactive quiz is crafted for anyone with a keen interest in quizzes, covering a wide array of topics such as general knowledge, video games, science & nature, and films. It features 20 diverse questions, each accompanied by four possible answers for participants to select from. As participants navigate through the quiz, questions will appear in a random order, ensuring a unique experience for each user. Instant feedback is provided after each selection, indicating whether the chosen answer is correct or incorrect, and the correct answer is displayed for any wrong choices. Participants are allotted a maximum of 15 seconds per question, with a countdown timer and a diminishing bar visually tracking the time left. At the quiz's conclusion, participants can view their total correct answers, their overall score as a percentage, and their score converted into a grade, following typical grading boundaries.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+# Contents
 
-## Codeanywhere Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+# Target Audience 
+*   This quiz is aimed at anyone who has a keen interest in quizzes. This quiz is designed as a brief assessment tool to evaluate knowledge and retention across various subjects. It's also a fun exercise for quiz enthusiasts who wish to test how much they remember from diverse topics of interest.
 
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+# User Expectations
+*   This is a interactive quiz that is able to be completed on desktop, tablet and mobile devices.
+*   The quiz will load quickly on all devices.
+*   The quiz is fully responsive.
+*   Feedback from each question attempted.
+*   Clear indication of time left to answer each question via a timer bar and number
+*   Clear indication of which question they are on and how many questions in total. 
+*   Overall feedback with a mark, percentage and grade at the end.
+*   The ability to restart the quiz once completed.
