@@ -19,3 +19,35 @@ This interactive quiz is crafted for anyone with a keen interest in quizzes, cov
 *   Clear indication of which question they are on and how many questions in total. 
 *   Overall feedback with a mark, percentage and grade at the end.
 *   The ability to restart the quiz once completed.
+
+# User Stories
+
+* As a visitor:
+
+    * I am looking for an easy to navigate test, that is responsive and easy to interact with on all devices.
+    * I will see a start button and a header detailing the content and subject of the quiz.
+    * I will click start and see the instructions for the quiz.
+    * The Instructions will be clearly laid out and easy to follow.
+    * I will see two buttons at the bottom of the rules inviting me to start the test or quit.
+    * The quiz will begin when I click the start button.
+    * I will see the question number and total at the top of the quiz area.
+    * I will see a timer bar indicating how long I have left on that question.
+    * I will see a timer number counting down to show how long I have left on that quesiton.
+    * I will see the question being asked.
+    * I will see 4 possible answers.
+    * Once an answer is selected I will see if I am correct instantly by showing the answer correct answer in (colour).
+    * If incorrect I will see my answer selected turn (colour) and the correct answer show in (colour).
+    * The next button will appear when I have selected an answer and the timer and timer bar will stop.
+    * I will complete all 20 questions.
+    * After completing all 20 questions a results window will appear showing me my overall score, percentage and grade achieved.
+    * I am able to restart the quiz again.
+    * The question order and options in each question will be random.
+    * I can see links in the footer to social media. 
+
+# Design
+
+## Typography
+*   For my font choice I selected Lato which was imported from Google Fonts. This font was selected because it is simple and clear to read. The purpose of the quiz is to test your knowledge and I did not want a font that distracts away from this. PLACEHOLDER FOR TYPOGRAPHY IMAGE.
+
+## Colour Scheme
+- I decided on a simple colour scheme that was consistent throughout the quiz. FINISH WHEN COLOURS DECIDED ON.
