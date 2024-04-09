@@ -103,3 +103,67 @@ IMAGE OF RANDOM QUESTION EXAMPLES X2
 *   The answers will appear in a random order for each question every time the quiz is attempted. This ensures the user does not just learn the sequence of answers.
 
 IMAGE OF RANDOM ANSWER EXAMPLES X2
+
+## Features Left To Implement and Future Development
+### Below are features that I would like to integrate into the project:
+*   Greater selection of questions and/or the use of an API to generate the questions.
+*   Responsive test design which selects the next quesion based on the success of the user in the previous few questions.
+*   Level of difficulty questions that the user can select which will in turn dictate the demand of the questions being asked.
+
+## Wireframes
+
+WIREFRAMES IMAGES HERE
+
+## Framework, Languages and Programs Used
+
+1. [Google Fonts](https://fonts.google.com/)
+    *Google Fonts was used to import different font styles to be used in styling of the website.
+
+    ADD ADDITIONAL FRAMEWORKS HERE
+
+# Testing 
+
+*   The website and interactive quiz has been tested through the following methods below. These tests have taken place on the hosted server during development and on the deployed site on GitHub pages. After deploying the website to GitHub Pages the webiste was further tested by friends, family and students at my school to check its UX and functionality on both desktop computers and the variety of mobile devices.
+
+## Validator testing:
+
+TESTING HERE
+
+
+
+
+## Unfixed Bugs
+*   On desktop devices: Tabbing out of the quiz once started loses the window focus. This causes the timer bar to stop counting down. The numbers work correctly. This will be corrected in the future by ensuring when the quiz has started, the window is always the focus even if tabbed out.
+
+## Lighthouse results
+
+*   I have used the developer tools in google chrome to test each page in my website for performance, accessibility, best practice and SEO. Below is an exmaple of the homepage.
+
+### Mobile
+IMAGE OF MOBILE
+### Desktop
+IMAGE OF DESKTOP
+
+## Responsiveness
+*   In order to fully test the responsiveness of the web application I performed further tests on different devices and browsers. These were:
+    *Browsers:
+        * Google Chrome
+        * Safari
+        * MS Edge
+        * Firefox
+
+    * Devices:
+        * IPhone 14pro
+        * IPhone 12 Mini
+        * IPad Pro 12.9inc
+        * Mac Laptop
+        * Windows Desktop PC
+        * Windows Laptop
+
+## Features Tested
+
+| Feature   | Expected Outcome | Testing Performed  | Result | Pass or Fail |
+| :---      |   :----:         |        :----:      | :----: |    :----:    
+| Start Button | When clicked <br> test instructions <br> appear. | Clicked Start | Insturctions shown  | Pass      |
+
+
