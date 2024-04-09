@@ -51,3 +51,55 @@ This interactive quiz is crafted for anyone with a keen interest in quizzes, cov
 
 ## Colour Scheme
 - I decided on a simple colour scheme that was consistent throughout the quiz. FINISH WHEN COLOURS DECIDED ON.
+
+
+# Features
+
+## Exsiting Features:
+
+### Header and Footer
+*   Header element detailing the quiz title and a interactive footer that will direct users to my social media sites.
+
+IMAGES OF HEADER AND FOOTER
+
+
+### Interactive Start Button
+*   The users will be greeted on the home page with an interactive start button that has a hover effect and opens up the rules window when clicked.
+
+IMAGES OF START BUTTON AND START BUTTON HOVER
+IMAGE OF THE INSTRUCTIONS
+
+### Question number in the Quiz Area
+*   The users will see the question number they are on and how many questions there are in the header of their quiz area.
+
+IMAGE OF QUESTION NUMBER
+
+### Timer bar and number
+*   The user will see how many seconds left there are to answer the current question. This will also be displayed in a timer bar.
+
+IMAGE OF TIMER BAR
+
+### Selecting correct answer 
+*   Selecting the correct answer will stop the timer and timer bar, display the answer as COLOR and display a button to move to the next question.
+
+IMAGE OF CORRECT ANSWER
+
+### Incorrect answer selection
+*   Selecting an incorrect answer will stop the timer and the timer bar, display the incorrect answer selected as COLOR and the correct answer as COLOR.
+
+IMAGE OF INCORRECT ANSWER
+
+### Results Area
+*   The results area will show the total number of questions correct, calculate the percentage and use the percentage to generate a grade for the user.
+
+IMAGE OF RESULTS AREA
+
+### Random Question Order Generation
+*   The 20 questions in the quiz appear in a random order every time the quiz is attempted to ensure the user does not just learn the sequence of answers.
+
+IMAGE OF RANDOM QUESTION EXAMPLES X2
+
+### Random Answer Order Generation
+*   The answers will appear in a random order for each question every time the quiz is attempted. This ensures the user does not just learn the sequence of answers.
+
+IMAGE OF RANDOM ANSWER EXAMPLES X2
