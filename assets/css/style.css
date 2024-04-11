@@ -10,7 +10,7 @@
 
 /* Body styling */
 body {
-    background: #b1d1f0;
+    background: #ffffff;
 }
 
 /* Heading styling */
@@ -25,7 +25,7 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #b1d1f0;
+    background: #cccccc;
     padding: 30px;
 }
 
@@ -68,25 +68,25 @@ h2 {
 .start_btn {
     font-size: 30px;
     font-weight: 600;
-    border: 1px solid #ffffff;
+    border: 1px solid #cccccc;
     outline: none;
     padding: 20px 30px;
     border-radius: 5px;
     cursor: pointer;
-    background: #0078d4;
-    color: #ffffff
+    background: #e6e6e6;
+    color: #333333;
 }
 
 .start_btn:hover {
-    background: #005a9e;
+    background: #cccccc;
 }
 
 @media only screen and (min-width: 1040px) {
     .start_btn:hover {
-        background: #b1d1f0;
-        color: rgb(3, 46, 103);
+        background: #cccccc;
+        color: #333333;
         transition: all 0.3s ease;
-        box-shadow: 8px 8px 8px black;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -97,8 +97,8 @@ h2 {
     width: 60%;
     border-radius: 5px;
     opacity: 0;
-    border: 1px solid black;
-    background: #E4E8FA;
+    border: 1px solid #cccccc;
+    background: #f0f0f0;
     pointer-events: none;
     transform: translate(-50%, -50%);
 }
@@ -111,11 +111,11 @@ h2 {
     text-align: center;
     height: auto;
     width: 100%;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid #cccccc;
     padding: 20px 20px;
     font-size: 40px;
     font-weight: 600;
-    color: #032E67;
+    color: #333333;
 }
 
 /* Styling for difficulty area */
@@ -124,8 +124,8 @@ h2 {
     width: 60%;
     border-radius: 5px;
     opacity: 0;
-    border: 1px solid black;
-    background: #E4E8FA;
+    border: 1px solid #cccccc;
+    background: #f0f0f0;
     pointer-events: none;
     transform: translate(-50%, -50%);
 }
@@ -138,11 +138,11 @@ h2 {
     text-align: center;
     height: auto;
     width: 100%;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid #cccccc;
     padding: 20px 20px;
     font-size: 40px;
     font-weight: 600;
-    color: #032E67;
+    color: #333333;
 }
 
 /* Styling for instructions area */
@@ -151,8 +151,8 @@ h2 {
     width: 60%;
     border-radius: 5px;
     opacity: 0;
-    border: 1px solid black;
-    background: #E4E8FA;
+    border: 1px solid #cccccc;
+    background: #f0f0f0;
     pointer-events: none;
     transform: translate(-50%, -50%);
 }
@@ -165,11 +165,11 @@ h2 {
     text-align: center;
     height: auto;
     width: 100%;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid #cccccc;
     padding: 20px 20px;
     font-size: 40px;
     font-weight: 600;
-    color: #032E67;
+    color: #333333;
 }
 
 /* Styling for instructions list items */
@@ -178,14 +178,14 @@ h2 {
     width: 100%;
     margin: 5px 0;
     font-size: 20px;
-    color: #032E67;
+    color: #333333;
 }
 
 /* Styling for span elements within instructions area */
 .instructions_area span {
     padding: 0 5px;
     font-weight: 600;
-    color: #00ff00;
+    color: #678D8D;
 }
 
 /* Styling for buttons container */
@@ -203,14 +203,14 @@ h2 {
     padding: 5px;
     height: 60px;
     width: 150px;
-    border: 1px solid black;
+    border: 1px solid #cccccc;
     border-radius: 5px;
-    color: #fff;
+    color: #333333;
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    background: #032E67;
+    background: #e6e6e6;
 }
 
 .buttons  .quit {
@@ -218,22 +218,23 @@ h2 {
 }
 
 .buttons button:hover {
-    background: #005a9e;
+    background: #CCCCCC;
 }
 
 @media only screen and (min-width: 1040px) {
     .buttons button:hover {
-        background: #b1d1f0;
+        background: #cccccc;
         transition: all .5s ease;
         box-shadow: 8px 8px 8px black;
-        color: #032e67;
+        color: #333333;
     }
 }
 
 /* Styling for game area */
 .game_area {
     min-width: 60%;
-    background: #303030;
+    background: #f0f0f0;
+    color: #333333;
     border-radius: 5px;
     opacity: 0;
     pointer-events: none;
@@ -250,7 +251,7 @@ h2 {
     z-index: 99;
     height: 110px;
     padding: 0 30px;
-    background: #303030;
+    background: #ffffff;
     margin-bottom: 30px;
     margin-top: 30px;
     border-bottom: 1px solid #ffffff;
@@ -301,7 +302,7 @@ header .total_questions span p:first-child {
     border-radius: 30px;
     overflow: hidden;
     margin-bottom: 10px;
-    border: 3px solid black;
+    border: 3px solid #cccccc;
 }
 
 .time_line .progress .progress_bar {
@@ -309,7 +310,7 @@ header .total_questions span p:first-child {
     bottom: 0px;
     left: 0px;
     height: 100%;
-    background: linear-gradient(to left, #b1d1f0, #032E67);
+    background: linear-gradient(to left, #E6E6E6, #F0F0F0);
     transition: width 0.25s ease;
 }
 
@@ -318,7 +319,7 @@ header .total_questions span p:first-child {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: #333333;
     font-size: 20px;
     font-weight: 600;
 }
@@ -330,7 +331,7 @@ header .total_questions span p:first-child {
     justify-content: center;
     flex-direction: column;
     padding: 25px 30px 20px 30px;
-    background: #E4E8FA;
+    background: #f0f0f0;
 }
 
 .game_area .play_area .question_text {
@@ -338,6 +339,7 @@ header .total_questions span p:first-child {
     font-weight: 600;
     text-align: center;
     margin-bottom: 10px;
+    color: #333333;
 }
 
 .game_area .play_area .option_list {
@@ -349,8 +351,8 @@ header .total_questions span p:first-child {
 }
 
 .game_area .option_list li {
-    background: #b1d1f0;
-    border: 1px solid #032E67;
+    background: #e6e6e6;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     padding: 8px 15px;
     margin-bottom: 30px;
@@ -366,6 +368,7 @@ header .total_questions span p:first-child {
     min-width: 150px;
     text-align: center;
     list-style-type: none;
+    color: #333333;
 }
 
 .game_area .option_list .option:last-child {
@@ -376,8 +379,8 @@ header .total_questions span p:first-child {
 /* option list in game area hover color */
 @media only screen and (min-width: 1040px) {
     .game_area .option_list li:hover {
-        background: #032E67;
-        color: #fff;
+        background: #cccccc;
+        color: #333333;
         transition: all is ease;
         transform: scale(0.95);
     }
@@ -385,15 +388,15 @@ header .total_questions span p:first-child {
 
 /* selecting correct answer and incorrect answer */
 .option_list .option.correct {
-    color: #175e1a;
-    background: #64ad75;
-    border-color: #03290c;
+    color: #ffffff;
+    background: #4caf50;
+    border-color: #388e3c;
 }
 
 .option_list .option.incorrect {
-    color: #721c24;
-    background: #ed3545;
-    border-color: #f5c6cb;
+    color: #ffffff;
+    background: #f44336;
+    border-color: #d32f2f;
 }
 
 .option_list .option.disabled {
@@ -416,28 +419,28 @@ footer .next_btn {
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     border: none;
     outline: none;
-    background: #032E67;
-    color: #fff;
+    background: #E6E6E6;
+    color: #333333;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #CCCCCC;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
 @media only screen and (min-width: 1040px) {
     footer .next_btn:hover {
-        background: #b1d1f0;
+        background: #cccccc;
         box-shadow: 8px 8px 8px black;
-        color: #032E67;
+        color: #333333;
     }
 }
 
 /* Results window styling */ 
 .result_area {
-    background: #E4E8FA;
+    background: #f0f0f0;
     padding: 25px 30px;
     border-radius: 5px;
     display: flex;
@@ -454,28 +457,29 @@ footer .next_btn {
 .result_area .complete_text {
     font-size: 40px;
     font-weight: 500;
+    color: #333333;
 }
 
 .result_area .percentage {
     font-size: 25px;
-    font-weight: 500;
-    background: linear-gradient(to left, #b1d1f0, #487EC5);
+    font-weight: 600;
+    background: #e6e6e6;
     margin-bottom: 20px;
     margin-top: 20px;
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #cccccc;
     box-shadow: 2px 2px 2px black;
 }
 
 .result_area .grade {
     font-size: 30px;
-    font-weight: 500;
-    background: linear-gradient(to left, #b1d1f0, #487ec5);
+    font-weight: 600;
+    background: #e6e6e6;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
-    border: 1px solid black;
+    border: 1px solid #cccccc;
     box-shadow: 2px 2px 2px black;
 }
 
@@ -483,16 +487,16 @@ footer .next_btn {
     display: flex;
     margin: 10px 10px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .score_value span p {
-    font-weight: 500;
+    font-weight: 600;
     padding: 0 4px;
 }
 
 .percentage .grade span p {
-    font-weight: 500;
+    font-weight: 600;
     padding: 0 4px;
 }
 
@@ -502,8 +506,8 @@ footer .next_btn {
     bottom: 0%;
     width: 100%;
     padding: 5px 0;
-    background-color: #b1d1f0;
-    color: #032E67;
+    background-color: #e6e6e6;
+    color: #333333;
 }
 
 .footer_basic #footer-li {
@@ -516,7 +520,7 @@ footer .next_btn {
 }
 
 .footer_basic #footer-li a {
-    color: #032E67;
+    color: #333333;
     text-decoration: none;
     opacity: 1;
     padding: 5px;
@@ -550,9 +554,9 @@ footer .next_btn {
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid #032E67;
+    border: 1px solid #cccccc;
     margin: 0 20px;
-    color: #032E67;
+    color: #333333;
     opacity: 0.75;
 }
 
@@ -568,7 +572,7 @@ footer .next_btn {
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
-    color: #032e67;
+    color: #333333;
     margin-bottom: 0;
 }
 
@@ -689,7 +693,7 @@ footer .next_btn {
 
     .game_area {
         width: 95%;
-        box-shadow: 2px 2px 2px black;
+        box-shadow: #ffffff;
     }
 
     .game_area .play_area {
