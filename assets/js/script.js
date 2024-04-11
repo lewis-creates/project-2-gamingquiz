@@ -306,7 +306,7 @@ function startTimer(time) {
             let allOptions = options.children.length;
 
             for (let i = 0; i < allOptions; i++) {
-                if (options_list.children[i].textContent == correctAns) {
+                if (option_list.children[i].textContent == correctAns) {
                     options.children[i].classList.add("correct");
                 }
             }
