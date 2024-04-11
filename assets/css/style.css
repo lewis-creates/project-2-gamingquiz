@@ -10,13 +10,13 @@
 
 /* Body styling */
 body {
-    background: #1f2833;
+    background: #b1d1f0;
 }
 
 /* Heading styling */
 h1,
 h2 {
-    color:#66FCF1;
+    color:#032E67;
     text-align: center;
 }
 
@@ -25,16 +25,16 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #1F2833;
+    background: #b1d1f0;
     padding: 30px;
 }
 
 .heading h1 {
-    font-size: 48px;
+    font-size: 50px;
 }
 
 .heading h2 {
-    font-size: 32px;
+    font-size: 30px;
     padding-top: 10px;
 }
 
@@ -67,29 +67,29 @@ h2 {
 /* Styling for start button */
 .start_btn {
     font-size: 30px;
-    font-weight: 700;
-    border: 1px solid #F4F4F4;
+    font-weight: 600;
+    border: 1px solid #ffffff;
     outline: none;
     padding: 20px 30px;
     border-radius: 5px;
     cursor: pointer;
-    background: #0B0C10;
-    color: #C5C6C7;
+    background: #0078d4;
+    color: #ffffff
 }
 
 .start_btn:hover {
-    background: #66FCF1;
-    color: #0B0C10;
+    background: #005a9e;
 }
 
 @media only screen and (min-width: 1040px) {
     .start_btn:hover {
-        background: #45A29E;
-        color: #0B0C10;
+        background: #b1d1f0;
+        color: rgb(3, 46, 103);
         transition: all 0.3s ease;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 8px 8px 8px black;
     }
 }
+
 
 /* Styling for category area */
 .category_area {
@@ -97,8 +97,8 @@ h2 {
     width: 60%;
     border-radius: 5px;
     opacity: 0;
-    border: none;
-    background: #0B0C10;
+    border: 1px solid black;
+    background: #E4E8FA;
     pointer-events: none;
     transform: translate(-50%, -50%);
 }
@@ -111,11 +111,11 @@ h2 {
     text-align: center;
     height: auto;
     width: 100%;
-    border-bottom: 2px solid #45A29E;
+    border-bottom: 1px solid green;
     padding: 20px 20px;
     font-size: 40px;
-    font-weight: 700;
-    color: #C5C6C7;
+    font-weight: 600;
+    color: #032E67;
 }
 
 /* Styling for difficulty area */
@@ -124,8 +124,8 @@ h2 {
     width: 60%;
     border-radius: 5px;
     opacity: 0;
-    border: none;
-    background: #0B0C10;
+    border: 1px solid black;
+    background: #E4E8FA;
     pointer-events: none;
     transform: translate(-50%, -50%);
 }
@@ -138,11 +138,11 @@ h2 {
     text-align: center;
     height: auto;
     width: 100%;
-    border-bottom: 2px solid #45A29E;
+    border-bottom: 1px solid green;
     padding: 20px 20px;
     font-size: 40px;
-    font-weight: 700;
-    color: #C5C6C7;
+    font-weight: 600;
+    color: #032E67;
 }
 
 /* Styling for instructions area */
@@ -151,8 +151,8 @@ h2 {
     width: 60%;
     border-radius: 5px;
     opacity: 0;
-    border: none;
-    background: #0B0C10;
+    border: 1px solid black;
+    background: #E4E8FA;
     pointer-events: none;
     transform: translate(-50%, -50%);
 }
@@ -165,11 +165,11 @@ h2 {
     text-align: center;
     height: auto;
     width: 100%;
-    border-bottom: 2px solid #45A29E;
+    border-bottom: 1px solid green;
     padding: 20px 20px;
     font-size: 40px;
-    font-weight: 700;
-    color: #C5C6C7;
+    font-weight: 600;
+    color: #032E67;
 }
 
 /* Styling for instructions list items */
@@ -178,14 +178,14 @@ h2 {
     width: 100%;
     margin: 5px 0;
     font-size: 20px;
-    color: #33312E;
+    color: #032E67;
 }
 
 /* Styling for span elements within instructions area */
 .instructions_area span {
     padding: 0 5px;
     font-weight: 600;
-    color: #76b041;
+    color: #00ff00;
 }
 
 /* Styling for buttons container */
@@ -203,14 +203,14 @@ h2 {
     padding: 5px;
     height: 60px;
     width: 150px;
-    border: none;
+    border: 1px solid black;
     border-radius: 5px;
-    color: #C5C6C7;
+    color: #fff;
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    background: #0B0C10;
+    background: #032E67;
 }
 
 .buttons  .quit {
@@ -218,28 +218,27 @@ h2 {
 }
 
 .buttons button:hover {
-    background: #45A29E;
-    color: #0B0C10;
+    background: #005a9e;
 }
 
 @media only screen and (min-width: 1040px) {
     .buttons button:hover {
-        background: #66FCF1;
+        background: #b1d1f0;
         transition: all .5s ease;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-        color: #0B0C10;
+        box-shadow: 8px 8px 8px black;
+        color: #032e67;
     }
 }
 
 /* Styling for game area */
 .game_area {
     min-width: 60%;
-    background: #1f2833;
+    background: #303030;
     border-radius: 5px;
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 15px black;
 }
 
 /* Styling for header within game area */
@@ -251,20 +250,20 @@ h2 {
     z-index: 99;
     height: 110px;
     padding: 0 30px;
-    background: #0E1111;
+    background: #303030;
     margin-bottom: 30px;
     margin-top: 30px;
-    border-bottom: 2px solid #66FCF1;
-    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0px 5px 2px grey;
 }
 
 /* Styling for title within game area header */
 .game_area header .title {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: #C5C6C7;
+    color: #ffffff;
 }
 
 /* Styling for total questions within game area header */
@@ -331,8 +330,7 @@ header .total_questions span p:first-child {
     justify-content: center;
     flex-direction: column;
     padding: 25px 30px 20px 30px;
-    background: #1F2833;
-    color: #C5C6C7;
+    background: #E4E8FA;
 }
 
 .game_area .play_area .question_text {
@@ -351,8 +349,8 @@ header .total_questions span p:first-child {
 }
 
 .game_area .option_list li {
-    background: #1F2833;
-    border: 1px solid #66FCF1;
+    background: #b1d1f0;
+    border: 1px solid #032E67;
     border-radius: 5px;
     padding: 8px 15px;
     margin-bottom: 30px;
@@ -368,7 +366,6 @@ header .total_questions span p:first-child {
     min-width: 150px;
     text-align: center;
     list-style-type: none;
-    color: #C5C6C7;
 }
 
 .game_area .option_list .option:last-child {
