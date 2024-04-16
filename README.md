@@ -35,8 +35,8 @@ This interactive quiz is crafted for anyone with a keen interest in quizzes, cov
     * I will see a timer number counting down to show how long I have left on that quesiton.
     * I will see the question being asked.
     * I will see 4 possible answers.
-    * Once an answer is selected I will see if I am correct instantly by showing the answer correct answer in (colour).
-    * If incorrect I will see my answer selected turn (colour) and the correct answer show in (colour).
+    * Once an answer is selected I will see if I am correct instantly by showing the answer correct answer in green.
+    * If incorrect I will see my answer selected turn red and the correct answer show in green.
     * The next button will appear when I have selected an answer and the timer and timer bar will stop.
     * I will complete all 20 questions.
     * After completing all 20 questions a results window will appear showing me my overall score, percentage and grade achieved.
@@ -47,7 +47,7 @@ This interactive quiz is crafted for anyone with a keen interest in quizzes, cov
 # Design
 
 ## Typography
-*   For my font choice I selected Lato which was imported from Google Fonts. This font was selected because it is simple and clear to read. The purpose of the quiz is to test your knowledge and I did not want a font that distracts away from this. PLACEHOLDER FOR TYPOGRAPHY IMAGE.
+*   For my font choice I selected Roboto which was imported from Google Fonts. This font was selected because it is simple and clear to read. The purpose of the quiz is to test your knowledge and I did not want a font that distracts away from this. ![roboto](assets/images/font.choice.png)
 
 ## Colour Scheme
 - I decided on a simple colour scheme that was consistent throughout the quiz. FINISH WHEN COLOURS DECIDED ON.
