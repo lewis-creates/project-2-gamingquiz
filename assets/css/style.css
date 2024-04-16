@@ -674,6 +674,30 @@ footer .next_btn {
         font-size: 15px;
     }
 
+    footer {
+        bottom: 0;
+        color: #707070;
+        height: 2em;
+        left: 0;
+        position: relative;
+        width: 100%;
+        font-size: small;
+    }
+
+    .buttons {
+        height: 60px;
+    }
+
+    .buttons .quit {
+        margin-top: 30px;
+    }
+
+    .buttons button {
+        height: 50px;
+        margin: 20px 30px;
+        padding: 10px 30px 15px 30px;
+    }
+
     .buttons .sci_btn,
     button.games_btn,
     button.general_btn {
@@ -693,7 +717,7 @@ footer .next_btn {
 
     .game_area {
         width: 95%;
-        box-shadow: 0 0 10px #ffffff;
+        box-shadow: 2px 2px 2px #ffffff;
     }
 
     .game_area .play_area {
