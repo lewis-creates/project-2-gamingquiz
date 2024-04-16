@@ -6,6 +6,43 @@ This interactive quiz is crafted for anyone with a keen interest in quizzes, cov
 
 # Contents
 
+- [Contents](#contents)
+- [Target Audience](#target-audience)
+- [User Expectations](#user-expectations)
+- [User Stories](#user-stories)
+- [Design](#design)
+    - [Typography](#typography)
+    - [Colour Scheme](#colour-scheme)
+- [Features](#features)
+  - [Existing Features:](#existing-features)
+    - [Header and Footer](#header-and-footer)
+    - [Interactive Start Button](#interactive-start-button)
+    - [Question number in the Test Area](#question-number-in-the-test-area)
+    - [Timer bar and number](#timer-bar-and-number)
+    - [Selecting correct answer](#selecting-correct-answer)
+    - [Incorrect answer selection](#incorrect-answer-selection)
+    - [Results Area](#results-area)
+    - [Random Question Order Generation](#random-question-order-generation)
+    - [Random Answer Order Generation](#random-answer-order-generation)
+    - [Dynamic Question](#dynamic-question-generation-via-api)
+    - [API Integration](#api-integration)
+    - [Quiz Categories](#quiz-categories)
+    - [Quiz Difficulties](#quiz-difficulty)
+  - [Features Left To Implement and Future Development](#features-left-to-implement-and-future-development)
+    - [Below are features that I would like to integrate into the project:](#below-are-features-that-i-would-like-to-integrate-into-the-project)
+  - [Wireframes](#wireframes)
+  - [Framework, Languages and Programs Used](#framework-languages-and-programs-used)
+- [Testing](#testing)
+  - [Validator testing:](#validator-testing)
+  - [Unfixed Bugs](#unfixed-bugs)
+  - [Lighthouse results](#lighthouse-results)
+    - [Mobile](#mobile)
+    - [Desktop](#desktop)
+  - [Responsiveness](#responsiveness)
+  - [Features Tested](#features-tested)
+- [Deployment](#deployment)
+- [Credits](#credits)
+
 
 # Target Audience 
 *   This quiz is aimed at anyone who has a keen interest in quizzes. This quiz is designed as a brief assessment tool to evaluate knowledge and retention across various subjects. It's also a fun exercise for quiz enthusiasts who wish to test how much they remember from diverse topics of interest.
@@ -96,6 +133,21 @@ This interactive quiz is crafted for anyone with a keen interest in quizzes, cov
 ![questions](assets/images/random1.png)
 ![questions](assets/images/random2.png)
 
+### Dynamic Question Generation via API
+The quiz leverages the Open Trivia Database API to enrich the user experience with a diverse range of dynamically generated questions. This intergration allows for a robust quiz environment, catering to a variety of topics and difficulty levels.
+
+### API Integration
+*   The questions are fetched in real-time from the Open Trivia Database, a free service providing a wide array of quiz questions.
+![Open Trivia](assets/images/opentbd.png)
+
+### Quiz Categories
+*   The quiz offers four categories, Science & Nature, Video games, Films and general knowledge. This allows the user to select a category that they enjoy the most.
+![quiz categories](assets/images/quizcat.png)
+
+### Quiz Difficulty
+*   As well as being to select the different quiz category, I have also given the user the opportunity to select the difficulty. This can be easy, medium or hard. On the selection the correct difficulty questions for the category selected will be loaded into the quiz.
+![difficulty area](assets/images/difficultyarea.png)
+
 ## Features Left To Implement and Future Development
 ### Below are features that I would like to integrate into the project:
 *   Greater selection of questions and/or the use of an API to generate the questions.
@@ -137,8 +189,17 @@ This interactive quiz is crafted for anyone with a keen interest in quizzes, cov
     *   No errors were found when testing with the W3C HTML Validator.
 ![HTMLResult](assets/images/htmltest.png)
 
-*   
+* [CSS:](https://jigsaw.w3.org/)
+    *   No errors were found when testing with the W3C Jigsaw CSS Validator.
+![CSSResults](assets/images/csstest.png)
 
+* [Javascript:](https://jshint.com/)
+    *   No errors were found when testing with the JSHint Validator. [JSValidator]
+        * The following metrics were returned:
+        * There are 30 functions in this file.
+        * Function with the largest sigature takes 2 arguments, while the median is 0.
+        * Largest function has 26 statements in it, while the median is 3.
+        * The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 
 
 ## Unfixed Bugs
@@ -149,9 +210,9 @@ This interactive quiz is crafted for anyone with a keen interest in quizzes, cov
 *   I have used the developer tools in google chrome to test each page in my website for performance, accessibility, best practice and SEO. Below is an exmaple of the homepage.
 
 ### Mobile
-IMAGE OF MOBILE
+![Lighthouse test mobile](assets/images/lighthousemobile.png)
 ### Desktop
-IMAGE OF DESKTOP
+![Lighthouse test desktop](assets/images/lighthousedesktop.png)
 
 ## Responsiveness
 *   In order to fully test the responsiveness of the web application I performed further tests on different devices and browsers. These were:
@@ -173,26 +234,42 @@ IMAGE OF DESKTOP
 
 | Feature   | Expected Outcome | Testing Performed  | Result | Pass or Fail |
 | :---      |   :----:         |        :----:      | :----: |    :----:    
-| Start Button | When clicked <br> test instructions <br> appear. | Clicked Start | Instructions shown  | Pass      |
-| Quit Test Button  | When clicked <br> the Test ends <br> takes user to start. <br> | Clicked Quit | Navigate to start   | Pass        |
-| Start Test Button | When clicked <br> Test window shown <br> the test begins <br> | Clicked Start | Test begins  | Pass        |
-| Question Number | When test begins <br> question number displayed <br> counts up as you progress questions.| Moved through questions | Number counts up | Pass        |
-| Timer Bar | When test begins <br> timer bar decreases. <br>  | Started the test | Timer bar decreases | Pass        |
-| Timer     | When test begins <br> timer decreases from 15 <br> down to 0. | Started the test | Timer decreases  | Pass    |
+| Start Button | When clicked <br> quiz instructions <br> appear. | Clicked Start | Instructions shown  | Pass      |
+| Quit Quiz Button  | When clicked <br> the Test ends <br> takes user to start. <br> | Clicked Quit | Navigate to start   | Pass        |
+| Start Quiz Button | When clicked <br> Quiz window shown <br> the quiz begins <br> | Clicked Start | Quiz begins  | Pass        |
+| Question Number | When quiz begins <br> question number displayed <br> counts up as you progress questions.| Moved through questions | Number counts up | Pass        |
+| Timer Bar | When quiz begins <br> timer bar decreases. <br>  | Started the test | Timer bar decreases | Pass        |
+| Timer     | When quiz begins <br> timer decreases from 15 <br> down to 0. | Started the quiz | Timer decreases  | Pass    |
 | No answer selected | If no answer is <br> selected when timer <br> ends, correct answer <br> shown and no score acquired. | Did not select and answer | No point awarded and <br> correct answer shown | Pass    |
-| Next Button | When test begins the <br> next button will only display when <br> an answer is selected <br> and when clicked takes <br> user to next questions. | Clicked answer | Next button appears and takes <br> user to next questions | Pass   |
-| Results Window | After completing the Test <br> the results window will show. | Completed all questions | Results window shown | Pass    |
+| Next Button | When quiz begins the <br> next button will only display when <br> an answer is selected <br> and when clicked takes <br> user to next questions. | Clicked answer | Next button appears and takes <br> user to next questions | Pass   |
+| Results Window | After completing the Quiz <br> the results window will show. | Completed all questions | Results window shown | Pass    |
 | Results Data | Results window shows total score <br> Percentage achieved and <br> what grade achieved. | Completed questions to get different scores | Correct score, percentage and <br> grade shown | Pass    |
-|Restart Button | Click button to restart Test | Clicked restart | Test restarts | Pass  |
+|Restart Button | Click button to restart Quiz | Clicked restart | Quiz restarts | Pass  |
 Social Media | Click social media icons takes <br> user to social media site. | Clicked social media icons. | Navigated to social media. | Pass  |
 
 # Deployment
 
-* CHANGES WHEN DEPLOYED 
+*   The website has been deployed to GitHub pages. This was accomplished by following the detailed steps below:
+
+*   Selecting settings in the GitHub repository.
+*   Navigate to the pages tab on the left hand side of the screen.
+*   Select deploy from branch in the source section and ensure the main branch is selected in the branch.
+*   Finally click the save button and the page will be deployed to GitHub pages.
+*   Once the website has been updated to the server, you will see your live URL link.
+
+## Remaining Bugs
+
+- Certain questions or options that use special characters do not display correctly in the console and as a result, even when the user selects the correct answer, it does not display as correct. Likewise, if the user selects the incorrect answer, the correct answer does not show. This is rare and only a few questions cause this. It does not affect any other aspect of the quiz. With more development time I would correct this issue.
+
+- API fails to load: If the API fails to load no message is shown to the user even though the timer starts and timeline. With more development time I would like to write script that would provide user feedback if the API failed to load. I would do this in the same way I have with category select and difficulty. It would inform the user that their API is currently unavailable.
+
 
 # Credits 
 
 * [W3Schools](http://www.w3schools.com/) was used as a general source of knowledge.
+* [Loves Math project](https://learn.codeinstitute.net/dashboard) was used as a general source of knowledge.
+* [Slack Overflow](https;//stackoverflow.com/) Was used in the process of debugging the code.
+[MND Web Docs](#) was used as a general source of knowledge.
 
 
 
