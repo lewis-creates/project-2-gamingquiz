@@ -96,11 +96,6 @@ This interactive quiz is crafted for anyone with a keen interest in quizzes, cov
 ![questions](assets/images/random1.png)
 ![questions](assets/images/random2.png)
 
-### Random Answer Order Generation
-*   The answers will appear in a random order for each question every time the quiz is attempted. This ensures the user does not just learn the sequence of answers.
-
-IMAGE OF RANDOM ANSWER EXAMPLES X2
-
 ## Features Left To Implement and Future Development
 ### Below are features that I would like to integrate into the project:
 *   Greater selection of questions and/or the use of an API to generate the questions.
@@ -109,14 +104,28 @@ IMAGE OF RANDOM ANSWER EXAMPLES X2
 
 ## Wireframes
 
-WIREFRAMES IMAGES HERE
+*   Main Page:
+[design](assets/images/homewireframe.png)
+*   Instructions:
+[design](assets/images/instructionswireframe.png)
+*   Quiz Area:
+[design](assets/images/quizareawireframe.png)
+*   Results Area:
+[design](assets/images/resultsareawireframe.png)
 
 ## Framework, Languages and Programs Used
 
 1. [Google Fonts](https://fonts.google.com/)
     *Google Fonts was used to import different font styles to be used in styling of the website.
 
-    ADD ADDITIONAL FRAMEWORKS HERE
+2. [GitHub](https://github.com/)
+    *GitHub is used to store the projects code afer being pushed from Git.
+
+3. [Javascript](https://www.javascript.com/)
+    *Javascript was used to create the interactive elements on the website and Quiz.
+
+4. [Balsamiq](https://www.balsamiq.com/)
+    *Balsamiq was used to create the wireframes for the project.
 
 # Testing 
 
@@ -124,8 +133,11 @@ WIREFRAMES IMAGES HERE
 
 ## Validator testing:
 
-TESTING HERE
+* [HTML:](https://validator.w3.org/)
+    *   No errors were found when testing with the W3C HTML Validator.
+![HTMLResult](assets/images/htmltest.png)
 
+*   
 
 
 
