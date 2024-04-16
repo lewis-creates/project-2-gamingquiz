@@ -50,54 +50,51 @@ This interactive quiz is crafted for anyone with a keen interest in quizzes, cov
 *   For my font choice I selected Roboto which was imported from Google Fonts. This font was selected because it is simple and clear to read. The purpose of the quiz is to test your knowledge and I did not want a font that distracts away from this. ![roboto](assets/images/font.choice.png)
 
 ## Colour Scheme
-- I decided on a simple colour scheme that was consistent throughout the quiz. FINISH WHEN COLOURS DECIDED ON.
+- I decided on a simple colour scheme that was consistent throughout the quiz. Text black for the question on a white/light grey background. I did not want a design and colour scheme that distracted away from the quiz content. The colour scheme is displayed in the features section below.
 
 
 # Features
 
-## Exsiting Features:
+## Existing Features:
 
 ### Header and Footer
 *   Header element detailing the quiz title and a interactive footer that will direct users to my social media sites.
 
-IMAGES OF HEADER AND FOOTER
+![Header](assets/images/header.png)
+![Footer](assets/images/footer.png)
 
 
 ### Interactive Start Button
-*   The users will be greeted on the home page with an interactive start button that has a hover effect and opens up the rules window when clicked.
+*   The users will be greeted on the home page with an interactive start button that has a hover effect and opens up the guidelines window when clicked.
 
-IMAGES OF START BUTTON AND START BUTTON HOVER
-IMAGE OF THE INSTRUCTIONS
+![Start](assets/images/start.button.png)
+![Hover](assets/images/start.button.hvr.png)
+![Guidelines](assets/images/guidelines.png)
 
 ### Question number in the Quiz Area
 *   The users will see the question number they are on and how many questions there are in the header of their quiz area.
-
-IMAGE OF QUESTION NUMBER
+![question](assets/images/question.png)
 
 ### Timer bar and number
 *   The user will see how many seconds left there are to answer the current question. This will also be displayed in a timer bar.
-
-IMAGE OF TIMER BAR
+![timerbar](assets/images/timerbar.png)
 
 ### Selecting correct answer 
-*   Selecting the correct answer will stop the timer and timer bar, display the answer as COLOR and display a button to move to the next question.
-
-IMAGE OF CORRECT ANSWER
+*   Selecting the correct answer will stop the timer and timer bar, display the answer as green and display a button to move to the next question.
+![correct](assets/images/correctanswer.png)
 
 ### Incorrect answer selection
-*   Selecting an incorrect answer will stop the timer and the timer bar, display the incorrect answer selected as COLOR and the correct answer as COLOR.
-
-IMAGE OF INCORRECT ANSWER
+*   Selecting an incorrect answer will stop the timer and the timer bar, display the incorrect answer selected as red and the correct answer as green.
+![incorrect](assets/images/incorrectanswer.png)
 
 ### Results Area
 *   The results area will show the total number of questions correct, calculate the percentage and use the percentage to generate a grade for the user.
-
-IMAGE OF RESULTS AREA
+![results](assets/images/results.png)
 
 ### Random Question Order Generation
 *   The 20 questions in the quiz appear in a random order every time the quiz is attempted to ensure the user does not just learn the sequence of answers.
-
-IMAGE OF RANDOM QUESTION EXAMPLES X2
+![questions](assets/images/random1.png)
+![questions](assets/images/random2.png)
 
 ### Random Answer Order Generation
 *   The answers will appear in a random order for each question every time the quiz is attempted. This ensures the user does not just learn the sequence of answers.
