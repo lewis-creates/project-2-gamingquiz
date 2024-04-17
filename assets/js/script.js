@@ -332,3 +332,12 @@ function startTimerLine(time) {
         }
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const validPaths = ['/', '/index.html']; 
+    const currentPath = window.location.pathname;
+
+    if (!validPaths.includes(currentPath)) {
+        window.location.href = '/index.html'; 
+    }
+});
