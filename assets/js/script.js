@@ -151,6 +151,7 @@ exit_btn.addEventListener("click", () => {
     instructions_area.classList.remove("activeInfo");
 });
 
+// API code from https://opentdb.com/
 async function loadQuestion() {
         const APIUrl = `https://opentdb.com/api.php?amount=20&category=${category}&difficulty=${difficulty}&type=multiple`;
         const result = await fetch(APIUrl);
