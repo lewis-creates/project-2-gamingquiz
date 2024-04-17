@@ -110,6 +110,8 @@ This interactive quiz is crafted for anyone with a keen interest in quizzes, cov
 
 ### Question number in the Quiz Area
 *   The users will see the question number they are on and how many questions there are in the header of their quiz area.
+<br> 
+
 ![question](assets/images/question.png)
 
 ### Timer bar and number
@@ -123,11 +125,13 @@ This interactive quiz is crafted for anyone with a keen interest in quizzes, cov
 ### Incorrect answer selection
 *   Selecting an incorrect answer will stop the timer and the timer bar, display the incorrect answer selected as red and the correct answer as green.
 <br>
+
 ![incorrect](assets/images/incorrectanswer.png)
 
 ### Results Area
 *   The results area will show the total number of questions correct, calculate the percentage and use the percentage to generate a grade for the user.
 <br>
+
 ![results](assets/images/results.png)
 
 ### Random Question Order Generation
