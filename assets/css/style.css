@@ -778,35 +778,46 @@ footer .next_btn {
 
 }
 
+/* 404 Styling */
 .container_404 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    padding: 20px; 
+    background: #fff; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    border-radius: 10px; 
+    width: auto; 
+    max-width: 90%; 
 }
 
-.container_404 h1 {
+.container_404 .error_title {
     font-size: 72px;
     color: #032E67;
+    margin-bottom: 20px; 
 }
 
-.container_404 p {
+.container_404 .error_p {
     font-size: 24px;
     color: #666;
+    margin-bottom: 20px; 
 }
 
-.container_404 .home_btn {
+.container_404 .home_btn404 {
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 12px 24px; 
     margin-top: 20px;
     background: #E6E6E6;
     color: #333;
     text-decoration: none;
     border: 1px solid #CCCC;
     border-radius: 5px;
+    display: inline-block; 
+    transition: background-color 0.3s; 
 }
 
-.container_404 .home_btn:hover {
+.container_404 .home_btn404:hover {
     background: #CCCC;
 }
