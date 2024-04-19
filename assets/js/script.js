@@ -332,11 +332,3 @@ function startTimerLine(time) {
         }
     }
 }
-
-window.onload = function() {
-    if (new URL(window.location.href).searchParams.has('404')) {
-        let originalPath = localStorage.getItem('redirectPath');
-        console.log("404 Error for path:", originalPath);
-        window.location.href = '/project-2-gamingquiz/404.html'; 
-    }
-};
