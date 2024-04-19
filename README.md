@@ -1,6 +1,6 @@
 # Trivia Quiz: General Knowledge Quiz
 
-! Placeholder for center image, 
+[Image](assets/images/respoev.png)
 
 This interactive quiz is crafted for anyone with a keen interest in quizzes, covering a wide array of topics such as general knowledge, video games, science & nature, and films. It features 20 diverse questions, each accompanied by four possible answers for participants to select from. As participants navigate through the quiz, questions will appear in a random order, ensuring a unique experience for each user. Instant feedback is provided after each selection, indicating whether the chosen answer is correct or incorrect, and the correct answer is displayed for any wrong choices. Participants are allotted a maximum of 15 seconds per question, with a countdown timer and a diminishing bar visually tracking the time left. At the quiz's conclusion, participants can view their total correct answers, their overall score as a percentage, and their score converted into a grade, following typical grading boundaries.
 
