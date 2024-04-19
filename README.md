@@ -154,6 +154,10 @@ The quiz leverages the Open Trivia Database API to enrich the user experience wi
 *   As well as being to select the different quiz category, I have also given the user the opportunity to select the difficulty. This can be easy, medium or hard. On the selection the correct difficulty questions for the category selected will be loaded into the quiz.
 ![difficulty area](assets/images/difficultyarea.png)
 
+### 404 Page
+*   A user-friendly error page that informs users they have accessed a non-existent URL. It helps maintain a good user experience by offering a direct link back to the main page, ensuring users are not left stranded.
+![404 page](assets/images/404page.png)
+
 ## Features Left To Implement and Future Development
 ### Below are features that I would like to integrate into the project:
 *   Greater selection of questions and/or the use of an API to generate the questions.
