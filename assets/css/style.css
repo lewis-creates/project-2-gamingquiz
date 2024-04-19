@@ -778,50 +778,35 @@ footer .next_btn {
 
 }
 
-/* 404 Page Styles */
-body {
-    font-family: 'Roboto', sans-serif; 
-    background-color: #f0f0f0; 
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
 .container_404 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: auto;
-    max-width: 90%;
 }
 
 .container_404 h1 {
-    color: #032E67; 
     font-size: 72px;
+    color: #032E67;
 }
 
 .container_404 p {
-    color: #333333; 
     font-size: 24px;
-    margin-top: 10px;
+    color: #666;
 }
 
 .container_404 .home_btn {
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #007BFF; 
-    border: none;
+    font-size: 20px;
     padding: 10px 20px;
-    border-radius: 5px;
+    margin-top: 20px;
+    background: #E6E6E6;
+    color: #333;
     text-decoration: none;
-    transition: background-color 0.3s;
+    border: 1px solid #CCCC;
+    border-radius: 5px;
 }
 
 .container_404 .home_btn:hover {
-    background-color: #0056b3; 
+    background: #CCCC;
 }
